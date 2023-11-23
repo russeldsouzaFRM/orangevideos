@@ -1,5 +1,6 @@
 ## Roshan check below firebase URL
 https://orangevideos.web.app/
+Only three pages are created Home, About us, and Services
 
 ## Getting Started with Create React App
 
