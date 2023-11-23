@@ -1,58 +1,37 @@
-.footer_1 .contact_widgets p:first-of-type {
-  margin-bottom: unset;
+.popup-vid-cotainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000085;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer_1 .social_widget ul li a,
-.footer_1 .contact_widgets p {
-  line-height: 2em;
-}
-
-.viewPopup {
-  top: 0%;
-}
-
-.closePopup {
-  top: -100%;
-}
-
-li.control_item {
-  padding: 20px;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.testi_con {
+.dv-popup-vid {
   position: relative;
 }
 
-.slick-dots-container .active {
-  background-color: #fff;
-}
-
-.slick-dots-container .slick-dot {
-  padding: 5px;
-  border: 1px solid;
-}
-
-.slick-dots-container {
-  display: flex;
-  gap: 0 10px;
-  position: absolute;
-  top: 0;
-  right: 15px;
-}
-
-a:focus {
+.dv-close .close-ico {
   color: #fff;
-  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-.chooseUs_title .Mui-selected {
-  background-color: #000 !important;
-  color: #fff !important;
+.dv-close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
 }
+
+.singleTM .singlefolio:after {
+  background-color: transparent !important;
+}
+
+/*banner*/
 
 .about-us-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -250,6 +229,7 @@ a.video_popup_custom {
 }
 .tm_img img {
   filter: grayscale(1);
+  margin: 25px;
 }
 .singleTM:hover .tm_img img {
   filter: grayscale(0);
@@ -300,45 +280,26 @@ a.video_popup_custom {
   }
 }
 
-@media (max-width: 768px) {
-  .chooseUs_title li {
-    float: unset;
+@media (max-width: 426px) {
+  .dv-popup-vid iframe {
+    width: 100%;
   }
 
-  .chooseUs_title li a {
-    line-height: normal;
+  .videoWrap_2 {
+    width: 100%;
+    position: relative;
   }
 
-  .footer_1 .contact_widgets,
-  .footer_1 .aboutwidget {
+  .ab_detail_wrap {
     padding-left: unset;
-    padding-bottom: 20px;
-  }
-
-  .testi_con {
     padding-top: 20px;
   }
 
-  .slick-dots-container {
-    right: unset;
+  .agency_img2 {
+    margin-top: 0;
   }
 
-  .img_details {
-    width: 100%;
+  .compay_date {
     position: unset;
-  }
-}
-
-@media (max-width: 426px) {
-  .banner_content h2 {
-    font-size: 36px;
-  }
-
-  .img_details {
-    width: 100% !important;
-  }
-
-  .commonSection {
-    padding: 50px 0;
   }
 }

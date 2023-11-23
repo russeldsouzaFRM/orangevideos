@@ -1,11 +1,21 @@
+import { Link } from "react-router-dom";
 import HomeSection6 from "./HomeSection6";
 import HomeSection7 from "./HomeSection7";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
     <>
       {/* section 1 */}
-      <section
+      <motion.section
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
         className="mobile-section"
         style={{
           minHeight: "100vh",
@@ -36,17 +46,27 @@ const Home = () => {
                     production
                   </h2>
                 </div>
-                <a href="video-services.php" className="common_btn red_bg">
+                <Link to="/video-services" className="common_btn red_bg">
                   <span>DISCOVER MORE</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* section 2 */}
-      <section className="commonSection ready-top">
+      <motion.section
+        className="commonSection ready-top"
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-9 col-sm-8 col-md-9 mobile-center">
@@ -61,10 +81,20 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* section 3 */}
-      <section className="commonSection">
+      <motion.section
+        className="commonSection"
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -268,10 +298,20 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* section 4 */}
-      <section className="commonSection featured">
+      <motion.section
+        className="commonSection featured"
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-5 col-sm-12  col-md-5">
@@ -323,10 +363,20 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* section 5 */}
-      <section className="commonSection porfolio">
+      <motion.section
+        className="commonSection porfolio"
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -498,16 +548,38 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* section 6 */}
-      <HomeSection6 />
+      <motion.div
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+      >
+        <HomeSection6 />
+      </motion.div>
 
       {/* section 7 */}
       <HomeSection7 />
 
       {/* section 8 */}
-      <section className="commonSection blog" id="blog-sec">
+      <motion.section
+        className="commonSection blog"
+        id="blog-sec"
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -523,7 +595,10 @@ const Home = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-4 col-sm-6 col-md-4" style={{ height: "410px" }}>
+            <div
+              className="col-lg-4 col-sm-6 col-md-4"
+              style={{ height: "410px" }}
+            >
               <div className="latestBlogItem">
                 <div className="lbi_thumb">
                   <img
@@ -544,7 +619,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-sm-6 col-md-4" style={{ height: "410px" }}>
+            <div
+              className="col-lg-4 col-sm-6 col-md-4"
+              style={{ height: "410px" }}
+            >
               <div className="latestBlogItem">
                 <div className="lbi_thumb">
                   <img
@@ -565,7 +643,10 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-sm-6 col-md-4" style={{ height: "410px" }}>
+            <div
+              className="col-lg-4 col-sm-6 col-md-4"
+              style={{ height: "410px" }}
+            >
               <div className="latestBlogItem">
                 <div className="lbi_thumb">
                   <img
@@ -597,10 +678,20 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* section 9 */}
-      <section className="commonSection client">
+      <motion.section
+        className="commonSection client"
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -772,10 +863,20 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* section 10 */}
-      <section className="commonSection ready">
+      <motion.section
+        className="commonSection ready"
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+      >
         <div className="container">
           <div className="row d-flex align-items-center">
             <div className="col-lg-8 col-sm-8 col-md-8">
@@ -796,7 +897,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 };

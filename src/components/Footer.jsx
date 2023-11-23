@@ -26,8 +26,15 @@ const Footer = () => {
                             <!--    C-208, Building no.5, Mittal Estate, Andheri-Kurla Road<br>-->
                             <!--    Andheri (E), Mumbai 400059-->
                             <!--</p>-->
-                            <p style="font-weight: bold;color: white;margin-bottom: 5px !important">Mumbai</p>
-                            <!-- <p style="margin-bottom: 20px !important">610, Peninsula Plaza,<br/>Fun Republic Road, Off Veera Desai Road,<br/>Andheri West, Mumbai 400053.</p> --> */}
+                          <!-- <p style="margin-bottom: 20px !important">610, Peninsula Plaza,<br/>Fun Republic Road, Off Veera Desai Road,<br/>Andheri West, Mumbai 400053.</p> --> */}
+                <p
+                  style={{
+                    fontWeight: "bold",
+                    color: "white",
+                  }}
+                >
+                  Mumbai
+                </p>
                 <p style={{ marginBottom: "20px !important" }}>
                   102, Town Center 2, Andheri Kurla Road, Marol, Andheri East,
                   Mumbai - 400059

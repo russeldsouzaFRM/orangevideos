@@ -1,58 +1,4 @@
-.footer_1 .contact_widgets p:first-of-type {
-  margin-bottom: unset;
-}
-
-.footer_1 .social_widget ul li a,
-.footer_1 .contact_widgets p {
-  line-height: 2em;
-}
-
-.viewPopup {
-  top: 0%;
-}
-
-.closePopup {
-  top: -100%;
-}
-
-li.control_item {
-  padding: 20px;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-.testi_con {
-  position: relative;
-}
-
-.slick-dots-container .active {
-  background-color: #fff;
-}
-
-.slick-dots-container .slick-dot {
-  padding: 5px;
-  border: 1px solid;
-}
-
-.slick-dots-container {
-  display: flex;
-  gap: 0 10px;
-  position: absolute;
-  top: 0;
-  right: 15px;
-}
-
-a:focus {
-  color: #fff;
-  text-decoration: none;
-}
-
-.chooseUs_title .Mui-selected {
-  background-color: #000 !important;
-  color: #fff !important;
-}
+/*banner*/
 
 .about-us-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -300,45 +246,12 @@ a.video_popup_custom {
   }
 }
 
-@media (max-width: 768px) {
-  .chooseUs_title li {
-    float: unset;
-  }
-
-  .chooseUs_title li a {
-    line-height: normal;
-  }
-
-  .footer_1 .contact_widgets,
-  .footer_1 .aboutwidget {
-    padding-left: unset;
-    padding-bottom: 20px;
-  }
-
-  .testi_con {
-    padding-top: 20px;
-  }
-
-  .slick-dots-container {
-    right: unset;
-  }
-
-  .img_details {
-    width: 100%;
-    position: unset;
-  }
-}
-
 @media (max-width: 426px) {
-  .banner_content h2 {
-    font-size: 36px;
-  }
-
-  .img_details {
-    width: 100% !important;
+  .CL_content .abc_inner {
+    margin-top: unset;
   }
 
   .commonSection {
-    padding: 50px 0;
+    padding: 120px 0;
   }
 }

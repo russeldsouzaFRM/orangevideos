@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const NavPopup = ({ clickFunc, showPopup }) => {
   useEffect(() => {
@@ -38,7 +39,9 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                 <div className="dl-menu__wrap dl-menuwrapper">
                   <ul className="dl-menu dl-menuopen">
                     <li className="">
-                      <a href="./about-us.php">about</a>
+                      <Link to="/about-us" onClick={clickFunc}>
+                        about
+                      </Link>
                       {/* <!--<ul className="dl-submenu">
                                             <li><a href="blog.html">Blog v1</a></li>
                                             <li><a href="blog2.html">Blog v2</a></li>
@@ -47,7 +50,9 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                                         </ul>--> */}
                     </li>
                     <li className="">
-                      <a href="./">home</a>
+                      <Link to="/" onClick={clickFunc}>
+                        home
+                      </Link>
                       {/* <!--<ul className="dl-submenu">
                                             <li><a href="index.html">Home 01</a></li>
                                             <li><a href="index2.html">Home 02</a></li>
@@ -56,14 +61,18 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                     </li>
                     {/* <!--<li><a href="./about-us.php">About</a></li>--> */}
                     <li className="">
-                      <a href="./video-services.php">services</a>
+                      <Link to="/video-services" onClick={clickFunc}>
+                        services
+                      </Link>
                       {/* <!--<ul className="dl-submenu">
                                             <li><a href="services.html">Service</a></li>
                                             <li><a href="service_detail.html">Service Detail</a></li>
                                         </ul>--> */}
                     </li>
                     <li className="">
-                      <a href="./portfolio.php">portfolio</a>
+                      <a href="./portfolio.php" onClick={clickFunc}>
+                        portfolio
+                      </a>
                       {/* <!--<ul className="dl-submenu">
                                             <li><a href="portfolio.html">Portfolio v1</a></li>
                                             <li><a href="portfolio2.html">Portfolio v2</a></li>
@@ -81,19 +90,29 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                       </a>
                     </li>
                     <li>
-                      <a href="./studio.php">Orange Studios</a>
+                      <a href="./studio.php" onClick={clickFunc}>
+                        Orange Studios
+                      </a>
                     </li>
                     <li>
-                      <a href="./clients.php">clients</a>
+                      <a href="./clients.php" onClick={clickFunc}>
+                        clients
+                      </a>
                     </li>
                     <li>
-                      <a href="./insights.php">insights</a>
+                      <a href="./insights.php" onClick={clickFunc}>
+                        insights
+                      </a>
                     </li>
                     <li className="d-inline-flex align-items-center">
-                      <a href="./careers.php">
+                      <a href="./careers.php" onClick={clickFunc}>
                         <span className="">careers </span>
                       </a>
-                      <a className="career-a" href="./careers.php#join-us">
+                      <a
+                        className="career-a"
+                        href="./careers.php#join-us"
+                        onClick={clickFunc}
+                      >
                         <span className="apply-now">Apply</span>
                       </a>
                     </li>

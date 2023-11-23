@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import NavPopup from "./NavPopup";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [changeScrollClassName, setChangeScrollClassName] = useState("");
@@ -18,7 +19,6 @@ const NavBar = () => {
 
   const handlePopup = () => {
     setShowPopup(showPopup ? false : true);
-
   };
 
   return (
@@ -28,7 +28,7 @@ const NavBar = () => {
           <div className="row">
             <div className="col-lg-2 col-sm-3 col-md-3">
               <div className="logo">
-                <a href="./">
+                <a href="/">
                   <img
                     src="https://www.orangevideos.in/assets-new/images/logo.svg"
                     alt=""
@@ -48,10 +48,10 @@ const NavBar = () => {
                                 <!--    </ul>-->
                                 <!--</li>--> */}
                   <li className="">
-                    <a href="./about-us.php">about</a>
+                    <Link to="/about-us">about</Link>
                   </li>
                   <li className="">
-                    <a href="./video-services.php">services</a>
+                    <Link to="/video-services">services</Link>
                   </li>
                   <li className="">
                     <a href="./portfolio.php">portfolio</a>
