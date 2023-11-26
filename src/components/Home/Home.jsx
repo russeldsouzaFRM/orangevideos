@@ -2,21 +2,13 @@ import { Link } from "react-router-dom";
 import HomeSection6 from "./HomeSection6";
 import HomeSection7 from "./HomeSection7";
 import { motion } from "framer-motion";
+import BannerVideo from "../../assets-new/videos/ov-banner_compressed.mp4";
 
 const Home = () => {
   return (
     <>
       {/* section 1 */}
-      <motion.section
-        initial="hide"
-        whileInView="view"
-        viewport={{ once: true }}
-        variants={{
-          view: { opacity: 1, y: 0 },
-          hide: { opacity: 0, y: 100 },
-        }}
-        transition={{ duration: 1 }}
-        className="mobile-section"
+      <section
         style={{
           minHeight: "100vh",
           height: "100%",
@@ -24,17 +16,25 @@ const Home = () => {
           alignItems: "center",
           backgroundColor: "#000",
         }}
+        className="mobile-section"
       >
         <div className="container-fluid container-fluid-custom">
           <div className="overlay-bg"></div>
           <video autoPlay muted loop id="myVideo">
-            <source
-              src="https://www.orangevideos.in/assets-new/videos/ov-banner_compressed.mp4"
-              type="video/mp4"
-            />
+            <source src={BannerVideo} type="video/mp4" />
           </video>
           <div className="container custom-text">
-            <div className="row">
+            <motion.div
+              className="row"
+              initial="hide"
+              whileInView="view"
+              viewport={{ once: true }}
+              variants={{
+                view: { opacity: 1, y: 0 },
+                hide: { opacity: 0, y: 100 },
+              }}
+              transition={{ duration: 1 }}
+            >
               <div className="col-lg-12">
                 <div className="banner_content text-left mb-3 mb-m-3">
                   <h4>Welcome to Orange Videos</h4>
@@ -50,25 +50,25 @@ const Home = () => {
                   <span>DISCOVER MORE</span>
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </motion.section>
+      </section>
 
       {/* section 2 */}
-      <motion.section
-        className="commonSection ready-top"
-        initial="hide"
-        whileInView="view"
-        viewport={{ once: true }}
-        variants={{
-          view: { opacity: 1, y: 0 },
-          hide: { opacity: 0, y: 100 },
-        }}
-        transition={{ duration: 1 }}
-      >
+      <section className="commonSection ready-top">
         <div className="container">
-          <div className="row">
+          <motion.div
+            className="row"
+            initial="hide"
+            whileInView="view"
+            viewport={{ once: true }}
+            variants={{
+              view: { opacity: 1, y: 0 },
+              hide: { opacity: 0, y: 100 },
+            }}
+            transition={{ duration: 1 }}
+          >
             <div className="col-lg-9 col-sm-8 col-md-9 mobile-center">
               <h2 className="sec_title white">
                 let's get your project started!
@@ -79,9 +79,9 @@ const Home = () => {
                 <span>let’s talk</span>
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </motion.section>
+      </section>
 
       {/* section 3 */}
       <motion.section
@@ -119,14 +119,14 @@ const Home = () => {
                   <div className="front">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/video-strategy.svg"
+                      src="../assets-new/images/icons/grey/video-strategy.svg"
                     />
                     <h3>video strategy</h3>
                   </div>
                   <div className="back">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/video-strategy-white.svg"
+                      src="../assets-new/images/icons/white/video-strategy-white.svg"
                     />
                     <h3>video strategy</h3>
                   </div>
@@ -142,14 +142,14 @@ const Home = () => {
                   <div className="front">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/corporate-video.svg"
+                      src="../assets-new/images/icons/grey/corporate-video.svg"
                     />
                     <h3>corporate videos</h3>
                   </div>
                   <div className="back">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/corporate-video-white.svg"
+                      src="../assets-new/images/icons/white/corporate-video-white.svg"
                     />
                     <h3>corporate videos</h3>
                   </div>
@@ -165,14 +165,14 @@ const Home = () => {
                   <div className="front">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/product-videos.svg"
+                      src="../assets-new/images/icons/grey/product-videos.svg"
                     />
                     <h3>product videos</h3>
                   </div>
                   <div className="back">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/product-videos-white.svg"
+                      src="../assets-new/images/icons/white/product-videos-white.svg"
                     />
                     <h3>product videos</h3>
                   </div>
@@ -188,14 +188,14 @@ const Home = () => {
                   <div className="front">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/aerial-photography.svg"
+                      src="../assets-new/images/icons/grey/aerial-photography.svg"
                     />
                     <h3>aerial videography &amp; photography</h3>
                   </div>
                   <div className="back">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/aerial-photography-white.svg"
+                      src="../assets-new/images/icons/white/aerial-photography-white.svg"
                     />
                     <h3>aerial videography &amp; photography</h3>
                   </div>
@@ -213,14 +213,14 @@ const Home = () => {
                   <div className="front">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/2d-3d-animateion.svg"
+                      src="../assets-new/images/icons/grey/2d-3d-animateion.svg"
                     />
                     <h3>2d &amp; 3d animation</h3>
                   </div>
                   <div className="back">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/2d-3d-animateion-white.svg"
+                      src="../assets-new/images/icons/white/2d-3d-animateion-white.svg"
                     />
                     <h3>2d &amp; 3d animation</h3>
                   </div>
@@ -236,14 +236,14 @@ const Home = () => {
                   <div className="front">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/explainer-video.svg"
+                      src="../assets-new/images/icons/grey/explainer-video.svg"
                     />
                     <h3>explainer videos</h3>
                   </div>
                   <div className="back">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/explainer-video-white.svg"
+                      src="../assets-new/images/icons/white/explainer-video-white.svg"
                     />
                     <h3>explainer videos</h3>
                   </div>
@@ -259,14 +259,14 @@ const Home = () => {
                   <div className="front">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/digital-ad-films.svg"
+                      src="../assets-new/images/icons/grey/digital-ad-films.svg"
                     />
                     <h3>digital ad films</h3>
                   </div>
                   <div className="back">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/digital-ad-filmswhite.svg"
+                      src="../assets-new/images/icons/white/digital-ad-filmswhite.svg"
                     />
                     <h3>digital ad films</h3>
                   </div>
@@ -282,14 +282,14 @@ const Home = () => {
                   <div className="front">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/photoshoot.svg"
+                      src="../assets-new/images/icons/grey/photoshoot.svg"
                     />
                     <h3>photoshoots</h3>
                   </div>
                   <div className="back">
                     <img
                       alt="ov-img"
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/photoshoot-white.svg"
+                      src="../assets-new/images/icons/white/photoshoot-white.svg"
                     />
                     <h3>photoshoots</h3>
                   </div>
@@ -349,10 +349,7 @@ const Home = () => {
             </div>
             <div className="col-lg-7 col-sm-12 col-md-7 noPaddingRight">
               <div className="features_img">
-                <img
-                  src="https://www.orangevideos.in/assets-new/images/WEBP/our-approach.webp"
-                  alt=""
-                />
+                <img src="../assets-new/images/WEBP/our-approach.webp" alt="" />
                 <div className="img_details">
                   <h4>
                     We connect brands and people through customized video
@@ -405,10 +402,7 @@ const Home = () => {
           <div className="row">
             <div className="col-lg-4 col-sm-6 col-md-4">
               <div className="singlefolio">
-                <img
-                  src="https://www.orangevideos.in/assets-new/images/WEBP/BPEP-new.webp"
-                  alt=""
-                />
+                <img src="../assets-new/images/WEBP/BPEP-new.webp" alt="" />
                 <a
                   className="video_popup video_popup_custom"
                   href="https://www.youtube.com/watch?v=43Z7IIvuSCg"
@@ -428,7 +422,7 @@ const Home = () => {
             <div className="col-lg-4 col-sm-6 col-md-4">
               <div className="singlefolio">
                 <img
-                  src="https://www.orangevideos.in/assets-new/images/portfolio/corporate-video/fsc-new.jpg"
+                  src="../assets-new/images/portfolio/corporate-video/fsc-new.jpg"
                   alt=""
                   loading="lazy"
                 />
@@ -451,7 +445,7 @@ const Home = () => {
             <div className="col-lg-4 col-sm-6 col-md-4">
               <div className="singlefolio">
                 <img
-                  src="https://www.orangevideos.in/assets-new/images/WEBP/total-new.webp"
+                  src="../assets-new/images/WEBP/total-new.webp"
                   alt=""
                   loading="lazy"
                 />
@@ -474,7 +468,7 @@ const Home = () => {
             <div className="col-lg-4 col-sm-6 col-md-4">
               <div className="singlefolio">
                 <img
-                  src="https://www.orangevideos.in/assets-new/images/portfolio/corporate-video/little-guru.jpg"
+                  src="../assets-new/images/portfolio/corporate-video/little-guru.jpg"
                   alt=""
                 />
                 <a
@@ -495,10 +489,7 @@ const Home = () => {
             </div>
             <div className="col-lg-4 col-sm-6 col-md-4">
               <div className="singlefolio">
-                <img
-                  src="https://www.orangevideos.in/assets-new/images/WEBP/anunta-new.webp"
-                  alt=""
-                />
+                <img src="../assets-new/images/WEBP/anunta-new.webp" alt="" />
                 <a
                   className="video_popup video_popup_custom"
                   href="https://www.youtube.com/watch?v=YayTPXoSSio"
@@ -517,10 +508,7 @@ const Home = () => {
             </div>
             <div className="col-lg-4 col-sm-6 col-md-4">
               <div className="singlefolio">
-                <img
-                  src="https://www.orangevideos.in/assets-new/images/WEBP/medtronic.webp"
-                  alt=""
-                />
+                <img src="../assets-new/images/WEBP/medtronic.webp" alt="" />
                 <a
                   className="video_popup video_popup_custom"
                   href="https://www.youtube.com/watch?v=tKekjL76IAs"
@@ -602,7 +590,7 @@ const Home = () => {
               <div className="latestBlogItem">
                 <div className="lbi_thumb">
                   <img
-                    src="https://www.orangevideos.in/assets-new/images/blog/vo-thumbnail.jpg"
+                    src="../assets-new/images/blog/vo-thumbnail.jpg"
                     alt=" Voice over and its role in videos"
                     style={{ height: "300px" }}
                   />
@@ -626,7 +614,7 @@ const Home = () => {
               <div className="latestBlogItem">
                 <div className="lbi_thumb">
                   <img
-                    src="https://www.orangevideos.in/assets-new/images/WEBP/prod-design-thumbnail.webp"
+                    src="../assets-new/images/WEBP/prod-design-thumbnail.webp"
                     alt="Importance of Production Design"
                     style={{ height: "300px" }}
                   />
@@ -650,7 +638,7 @@ const Home = () => {
               <div className="latestBlogItem">
                 <div className="lbi_thumb">
                   <img
-                    src="https://www.orangevideos.in/assets-new/images/WEBP/different-types-of-shots-thumb.webp"
+                    src="../assets-new/images/WEBP/different-types-of-shots-thumb.webp"
                     alt="Types of Shots in Live Shoot Videos"
                     style={{ height: "300px" }}
                   />
@@ -843,7 +831,7 @@ const Home = () => {
             </div>
             <div className="col-12 desktop-logo">
               <img
-                src="https://www.orangevideos.in/assets-new/images/client/client-logo-desktop feb 2023.jpg"
+                src="../assets-new/images/client/client-logo-desktop feb 2023.jpg"
                 className="img-fluid"
                 loading="lazy"
                 alt=""
@@ -851,12 +839,12 @@ const Home = () => {
             </div>
             <div className="col-12 mobile-logo text-center">
               <img
-                src="https://www.orangevideos.in/assets-new/images/WEBP/mobile_logo_1.webp"
+                src="../assets-new/images/WEBP/mobile_logo_1.webp"
                 className="img-fluid"
                 alt=""
               />
               <img
-                src="https://www.orangevideos.in/assets-new/images/WEBP/mobile_logo_2.webp"
+                src="../assets-new/images/WEBP/mobile_logo_2.webp"
                 className="img-fluid"
                 alt=""
               />

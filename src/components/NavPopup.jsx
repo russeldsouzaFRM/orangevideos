@@ -24,12 +24,12 @@ const NavPopup = ({ clickFunc, showPopup }) => {
           <div className="row">
             <div className="col-lg-12 text-left">
               <div className="logo2">
-                <a href="/">
+                <Link to="/" onClick={clickFunc}>
                   <img
-                    src="https://www.orangevideos.in/assets-new/images/logo.svg"
+                    src="../assets-new/images/logo (1).svg"
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -161,7 +161,7 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fa fa-instagram"></i>Instagram
+                      <i className="fa-brands fa-instagram"></i>Instagram
                     </a>
                   </li>
                   <li>
@@ -170,7 +170,7 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fa fa-facebook-square"></i>Facebook
+                      <i className="fa-brands fa-facebook"></i>Facebook
                     </a>
                   </li>
                   <li>
@@ -179,7 +179,7 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fa fa-twitter"></i>Twitter
+                      <i className="fa-brands fa-x-twitter"></i>Twitter
                     </a>
                   </li>
                   <li>
@@ -188,7 +188,7 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fa fa-youtube-play"></i>YouTube
+                      <i className="fa-brands fa-youtube"></i>YouTube
                     </a>
                   </li>
                   <li>
@@ -197,7 +197,7 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fa fa-linkedin"></i>LinkedIn
+                      <i className="fa-brands fa-linkedin"></i>LinkedIn
                     </a>
                   </li>
                 </ul>

@@ -56,42 +56,42 @@ a:focus {
 
 .about-us-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(https://www.orangevideos.in/assets-new/images/banner/about-us.jpg)
+    url(../src/assets-new/images/banner/about-us.jpg)
       no-repeat center center / cover;
 }
 .contact-us-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(https://www.orangevideos.in/assets-new/images/banner/contact-us.jpg)
+    url(../src/assets-new/images/banner/contact-us.jpg)
       no-repeat center right / cover;
 }
 .client-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(https://www.orangevideos.in/assets-new/images/banner/clients.jpg)
+    url(../src/assets-new/images/banner/clients.jpg)
       no-repeat center center / cover;
 }
 .services-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(https://www.orangevideos.in/assets-new/images/banner/services.jpeg)
+    url(../src/assets-new/images/banner/services.jpeg)
       no-repeat center center / cover;
 }
 .portfolio-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(https://www.orangevideos.in/assets-new/images/banner/portfolio.jpg)
+    url(../src/assets-new/images/banner/portfolio.jpg)
       no-repeat center center / cover;
 }
 .careers-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(https://www.orangevideos.in/assets-new/images/banner/careers.jpg)
+    url(../src/assets-new/images/banner/careers.jpg)
       no-repeat center center / cover;
 }
 .bd-job-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(https://www.orangevideos.in/assets-new/images/banner/bd-job-banner.jpeg)
+    url(../src/assets-new/images/banner/bd-job-banner.jpeg)
       no-repeat center center / cover;
 }
 .insights-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(https://www.orangevideos.in/assets-new/images/banner/insights-banner.jpeg)
+    url(../src/assets-new/images/banner/insights-banner.jpeg)
       no-repeat center center / cover;
 }
 .bg-white-button {
@@ -107,7 +107,7 @@ a:focus {
   color: #ff950d;
 }
 .ready-top {
-  background: url(https://www.orangevideos.in/assets-new/images/bg/1.jpg)
+  background: url(../src/assets-new/images/bg/1.jpg)
     no-repeat center center / cover;
 }
 .mb-3 {

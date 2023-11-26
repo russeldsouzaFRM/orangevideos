@@ -28,12 +28,12 @@ const NavBar = () => {
           <div className="row">
             <div className="col-lg-2 col-sm-3 col-md-3">
               <div className="logo">
-                <a href="/">
+                <Link to="/">
                   <img
-                    src="https://www.orangevideos.in/assets-new/images/logo.svg"
+                    src="../assets-new/images/logo (1).svg"
                     alt=""
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-lg-8 col-sm-7 col-md-7">

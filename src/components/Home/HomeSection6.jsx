@@ -17,63 +17,63 @@ const HomeSection6 = () => {
     {
       name: "Mega Pipes",
       subHead: "",
-      img: "https://www.orangevideos.in/assets-new/images/homepage/Mega-Pipes.png",
+      img: "../../assets-new/images/homepage/Mega-Pipes.png",
       description:
         "Working with Orange Videos' entire crew was simply too wonderful. Everything was well planned, from the planning stages to the implementation. Each team executed its tasks flawlessly, and the team members' communication was excellent. They gave their finest ideas at every turn, and the result was a fantastic video showcasing our brand-new business. Keep up the wonderful job, folks!",
     },
     {
       name: "Entropik Tech",
       subHead: "",
-      img: "https://www.orangevideos.in/assets-new/images/homepage/Entropik.png",
+      img: "../../assets-new/images/homepage/Entropik.png",
       description:
         "I absolutely loved the team's attitude towards the work assigned. All of them were very cordial and helpful throughout and most importantly, receptive towards the feedback shared. As a point for improvement, I feel the ideation can be better. The suggestions for enhancement were slightly lacking. While the video was a good show, I still feel the photoshoot experience was entirely vice-versa. Nonetheless, keep up the good work, team!",
     },
     {
       name: "Symbo",
       subHead: "",
-      img: "https://www.orangevideos.in/assets-new/images/homepage/Symbo.png",
+      img: "../../assets-new/images/homepage/Symbo.png",
       description:
         "We recently collaborated with Orange Videos for a video for our company, Symbo and they did a fabulous job! Everything was conducted timely and in an orderly manner, right from the setup to the post-production. It was a great experience working with them as they helped us achieve our vision with their expertise. They made quite a few revisions to the script and the animation as per our feedback and still delivered the final film as per the deadline decided.",
     },
     {
       name: "Yannick Brewart ",
       subHead: "Assistant Manager Marketing",
-      img: "https://www.orangevideos.in/assets-new/images/homepage/tata-testimonial.jpg",
+      img: "../../assets-new/images/homepage/tata-testimonial.jpg",
       description:
         "Great turnaround from Orange Videos, considering the stringent deadlines!",
     },
     {
       name: "Amrita Deb ",
       subHead: "Marketing Manager",
-      img: "https://www.orangevideos.in/assets-new/images/homepage/coats-testimonial.jpg",
+      img: "../../assets-new/images/homepage/coats-testimonial.jpg",
       description:
         "Wanted to share the feedback on the Down Leakage solution video. It’s really got a lot of appreciation from Global teams. You guys have done a fantastic job!",
     },
     {
       name: "Siddhant Bhandhari ",
       subHead: "Analyst",
-      img: "https://www.orangevideos.in/assets-new/images/homepage/bpep-testimonial.jpg",
+      img: "../../assets-new/images/homepage/bpep-testimonial.jpg",
       description:
         "Thank you Amey, Prateek and the entire Orange Videos team for conducting the shoot for us. I think everything was done properly. The costumes, the stylist, the makeup and everything was great! We hope to work with them again and for our portfolio companies as well.",
     },
     {
       name: "Madhava Sripada",
       subHead: "Deputy Manager (Sales)",
-      img: "https://www.orangevideos.in/assets-new/images/homepage/jmc-testimonial.jpeg",
+      img: "../../assets-new/images/homepage/jmc-testimonial.jpeg",
       description:
         "The team is professional, courteous, and easy to work with. Please feel free to give out my name as a reference, I will happily give you the highest recommendation. I look forward to working with you again soon.",
     },
     {
       name: "Rovina Adenwalla",
       subHead: "Corporate Communications",
-      img: "https://www.orangevideos.in/assets-new/images/homepage/cms-testimonial.jpeg",
+      img: "../../assets-new/images/homepage/cms-testimonial.jpeg",
       description:
         "It was a dream working with Orange Videos. They always seemed to be three steps ahead of me, with patience, diligence and excellent punctuality. One of the best product videos that I have created ever, thanks to Orange Videos.",
     },
     {
       name: "Garima Sharma",
       subHead: "Marketing Manager",
-      img: "https://www.orangevideos.in/assets-new/images/homepage/lorel-testimonial.jpeg",
+      img: "../../assets-new/images/homepage/lorel-testimonial.jpeg",
       description:
         "We were really under the gun with the minimal time we had. Orange Videos did a great job without balking at the timeline and we appreciate their efforts.",
     },

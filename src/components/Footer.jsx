@@ -7,10 +7,7 @@ const Footer = () => {
             <div className="col-lg-5 col-sm-6 col-md-5">
               <aside className="widget aboutwidget">
                 <a href="/">
-                  <img
-                    src="https://www.orangevideos.in/assets-new/images/logo.svg"
-                    alt=""
-                  />
+                  <img src="../assets-new/images/logo (1).svg" alt="logo" />
                 </a>
                 <p>
                   We're a video production agency helping businesses and brands

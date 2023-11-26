@@ -43,7 +43,7 @@ const AboutTeams = () => {
           <div className="singleTM">
             <div className="tm_img singlefolio mb-0">
               <img
-                src="https://www.orangevideos.in/assets-new/images/about/team/prateek_profile.jpg"
+                src="../assets-new/images/about/team/prateek_profile.jpg"
                 alt=""
               />
             </div>
@@ -63,7 +63,7 @@ const AboutTeams = () => {
           <div className="singleTM">
             <div className="tm_img singlefolio mb-0">
               <img
-                src="https://www.orangevideos.in/assets-new/images/about/team/shreyashi.jpg"
+                src="../assets-new/images/about/team/shreyashi.jpg"
                 alt=""
               />
             </div>
@@ -84,7 +84,7 @@ const AboutTeams = () => {
           <div className="singleTM">
             <div className="tm_img singlefolio mb-0">
               <img
-                src="https://www.orangevideos.in/assets-new/images/about/team/pradu_profile.jpg"
+                src="../assets-new/images/about/team/pradu_profile.jpg"
                 alt=""
               />
               <a
@@ -103,7 +103,7 @@ const AboutTeams = () => {
           <div className="singleTM">
             <div className="tm_img singlefolio mb-0">
               <img
-                src="https://www.orangevideos.in/assets-new/images/about/team/abhishek-kollat-v2.jpg"
+                src="../assets-new/images/about/team/abhishek-kollat-v2.jpg"
                 alt=""
               />
             </div>
@@ -123,7 +123,7 @@ const AboutTeams = () => {
           <div className="singleTM">
             <div className="tm_img singlefolio mb-0">
               <img
-                src="https://www.orangevideos.in/assets-new/images/about/team/akash_profile.jpg"
+                src="../assets-new/images/about/team/akash_profile.jpg"
                 alt=""
               />
             </div>
@@ -143,7 +143,7 @@ const AboutTeams = () => {
           <div className="singleTM">
             <div className="tm_img singlefolio mb-0">
               <img
-                src="https://www.orangevideos.in/assets-new/images/about/team/rachana_profile1.jpg"
+                src="../assets-new/images/about/team/rachana_profile1.jpg"
                 alt=""
               />
               <a
@@ -162,7 +162,7 @@ const AboutTeams = () => {
           <div className="singleTM">
             <div className="tm_img singlefolio mb-0">
               <img
-                src="https://www.orangevideos.in/assets-new/images/about/team/amey_profile.jpg"
+                src="../assets-new/images/about/team/amey_profile.jpg"
                 alt=""
               />
               <a
@@ -181,7 +181,7 @@ const AboutTeams = () => {
           <div className="singleTM">
             <div className="tm_img singlefolio mb-0">
               <img
-                src="https://www.orangevideos.in/assets-new/images/about/team/Abishek_profile.png"
+                src="../assets-new/images/about/team/Abishek_profile.png"
                 alt=""
               />
             </div>

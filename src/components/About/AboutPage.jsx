@@ -51,7 +51,7 @@ const AboutPage = () => {
             <div className="col-lg-6 col-sm-6 col-md-6">
               <div className="agency_img1">
                 <img
-                  src="https://www.orangevideos.in/assets-new/images/about/aboutus-530x464.jpg"
+                  src="../assets-new/images/about/aboutus-530x464.jpg"
                   alt=""
                 />
               </div>
@@ -59,7 +59,7 @@ const AboutPage = () => {
             <div className="col-lg-12 col-sm-12">
               <div className="agency_img2">
                 <img
-                  src="https://www.orangevideos.in/assets-new/images/about/about-us-820x444.jpg"
+                  src="../assets-new/images/about/about-us-820x444.jpg"
                   alt=""
                 />
               </div>
@@ -98,7 +98,7 @@ const AboutPage = () => {
       >
         <div className="videoWrap_2">
           <img
-            src="https://www.orangevideos.in/assets-new/images/about/about-us-showreel.jpg"
+            src="../assets-new/images/about/about-us-showreel.jpg"
             alt=""
           />
           <div className="play_video">

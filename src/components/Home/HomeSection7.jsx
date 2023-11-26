@@ -38,7 +38,7 @@ const HomeSection7 = () => {
         <div className="col-lg-5 col-sm-5 col-md-5">
           <div className="chose_img">
             <img
-              src="https://www.orangevideos.in/assets-new/images/WEBP/pan-india-operations.webp"
+              src="../../assets-new/images/WEBP/pan-india-operations.webp"
               alt=""
               loading="lazy"
             />
@@ -54,7 +54,7 @@ const HomeSection7 = () => {
         <div className="col-lg-5 col-sm-5 col-md-5">
           <div className="chose_img">
             <img
-              src="https://www.orangevideos.in/assets-new/images/WEBP/unique-approach.webp"
+              src="../../assets-new/images/WEBP/unique-approach.webp"
               alt=""
             />
           </div>
@@ -147,7 +147,7 @@ const HomeSection7 = () => {
         <div className="col-lg-5 col-sm-5 col-md-5">
           <div className="chose_img">
             <img
-              src="https://www.orangevideos.in/assets-new/images/WEBP/dedicated-crew.webp"
+              src="../../assets-new/images/WEBP/dedicated-crew.webp"
               alt=""
               loading="lazy"
             />

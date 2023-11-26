@@ -72,14 +72,14 @@ const ServicePage = () => {
                 <div className="flipper">
                   <div className="front">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/video-strategy.svg"
+                      src="../../assets-new/images/icons/grey/video-strategy.svg"
                       alt=""
                     />
                     <h3>video strategy</h3>
                   </div>
                   <div className="back">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/video-strategy-white.svg"
+                      src="../../assets-new/images/icons/white/video-strategy-white.svg"
                       alt=""
                     />
                     <h3>video strategy</h3>
@@ -95,14 +95,14 @@ const ServicePage = () => {
                 <div className="flipper">
                   <div className="front">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/corporate-video.svg"
+                      src="../../assets-new/images/icons/grey/corporate-video.svg"
                       alt=""
                     />
                     <h3>corporate videos</h3>
                   </div>
                   <div className="back">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/corporate-video-white.svg"
+                      src="../../assets-new/images/icons/white/corporate-video-white.svg"
                       alt=""
                     />
                     <h3>corporate videos</h3>
@@ -118,14 +118,14 @@ const ServicePage = () => {
                 <div className="flipper">
                   <div className="front">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/product-videos.svg"
+                      src="../../assets-new/images/icons/grey/product-videos.svg"
                       alt=""
                     />
                     <h3>product videos</h3>
                   </div>
                   <div className="back">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/product-videos-white.svg"
+                      src="../../assets-new/images/icons/white/product-videos-white.svg"
                       alt=""
                     />
                     <h3>product videos</h3>
@@ -141,14 +141,14 @@ const ServicePage = () => {
                 <div className="flipper">
                   <div className="front">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/aerial-photography.svg"
+                      src="../../assets-new/images/icons/grey/aerial-photography.svg"
                       alt=""
                     />
                     <h3>aerial videography &amp; photography</h3>
                   </div>
                   <div className="back">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/aerial-photography-white.svg"
+                      src="../../assets-new/images/icons/white/aerial-photography-white.svg"
                       alt=""
                     />
                     <h3>aerial videography &amp; photography</h3>
@@ -166,14 +166,14 @@ const ServicePage = () => {
                 <div className="flipper">
                   <div className="front">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/2d-3d-animateion.svg"
+                      src="../../assets-new/images/icons/grey/2d-3d-animateion.svg"
                       alt=""
                     />
                     <h3>2d &amp; 3d animation</h3>
                   </div>
                   <div className="back">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/2d-3d-animateion-white.svg"
+                      src="../../assets-new/images/icons/white/2d-3d-animateion-white.svg"
                       alt=""
                     />
                     <h3>2d &amp; 3d animation</h3>
@@ -189,14 +189,14 @@ const ServicePage = () => {
                 <div className="flipper">
                   <div className="front">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/explainer-video.svg"
+                      src="../../assets-new/images/icons/grey/explainer-video.svg"
                       alt=""
                     />
                     <h3>explainer videos</h3>
                   </div>
                   <div className="back">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/explainer-video-white.svg"
+                      src="../../assets-new/images/icons/white/explainer-video-white.svg"
                       alt=""
                     />
                     <h3>explainer videos</h3>
@@ -212,14 +212,14 @@ const ServicePage = () => {
                 <div className="flipper">
                   <div className="front">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/digital-ad-films.svg"
+                      src="../../assets-new/images/icons/grey/digital-ad-films.svg"
                       alt=""
                     />
                     <h3>digital ad films</h3>
                   </div>
                   <div className="back">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/digital-ad-filmswhite.svg"
+                      src="../../assets-new/images/icons/white/digital-ad-filmswhite.svg"
                       alt=""
                     />
                     <h3>digital ad films</h3>
@@ -235,14 +235,14 @@ const ServicePage = () => {
                 <div className="flipper">
                   <div className="front">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/grey/photoshoot.svg"
+                      src="../../assets-new/images/icons/grey/photoshoot.svg"
                       alt=""
                     />
                     <h3>photoshoots</h3>
                   </div>
                   <div className="back">
                     <img
-                      src="https://www.orangevideos.in/assets-new/images/icons/white/photoshoot-white.svg"
+                      src="../../assets-new/images/icons/white/photoshoot-white.svg"
                       alt=""
                     />
                     <h3>photoshoots</h3>
@@ -353,7 +353,7 @@ const ServicePage = () => {
             <div className="col-lg-12">
               <div className="CL_content">
                 <img
-                  src="https://www.orangevideos.in/assets-new/images/services/what-will-you-get.jpg"
+                  src="../../assets-new/images/services/what-will-you-get.jpg"
                   alt=""
                 />
                 <div className="abc_inner">
