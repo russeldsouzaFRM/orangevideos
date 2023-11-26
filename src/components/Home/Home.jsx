@@ -20,7 +20,15 @@ const Home = () => {
       >
         <div className="container-fluid container-fluid-custom">
           <div className="overlay-bg"></div>
-          <video autoPlay muted loop id="myVideo">
+          <video
+            src={BannerVideo}
+            autoPlay
+            muted
+            loop
+            id="myVideo"
+            preload="auto"
+            poster="../../assets-new/images/homepage-banner-video-poster.jpg"
+          >
             <source src={BannerVideo} type="video/mp4" />
           </video>
           <div className="container custom-text">
