@@ -165,7 +165,7 @@ const AboutPage = () => {
             ></iframe>
             <div className="dv-close">
               <i
-                class="fa-solid fa-xmark close-ico"
+                className="fa-solid fa-xmark close-ico"
                 onClick={handleVideoPopup}
               ></i>
             </div>

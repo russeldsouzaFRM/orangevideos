@@ -48,13 +48,13 @@ const AboutTeams = () => {
               />
             </div>
             {/* <a
-                class="popup-youtube video_popup video_popup_custom"
+                className="popup-youtube video_popup video_popup_custom"
                 href="https://www.youtube.com/watch?v=dyDzTRbokA0"
                 tabindex="-1"
               >
-                <i class="fa fa-play"></i>
+                <i className="fa fa-play"></i>
               </a> */}
-            <div class="detail_TM">
+            <div className="detail_TM">
               <h5>Prateek Tewari</h5>
               <h6>Production Lead</h6>
             </div>
@@ -68,14 +68,14 @@ const AboutTeams = () => {
               />
             </div>
             {/* <a
-                class="popup-youtube video_popup video_popup_custom"
+                className="popup-youtube video_popup video_popup_custom"
                 href="https://www.youtube.com/watch?v=QAVWyUy0jF0"
                 tabindex="-1"
               >
-                <i class="fa fa-play"></i>
+                <i className="fa fa-play"></i>
               </a> */}
 
-            <div class="detail_TM">
+            <div className="detail_TM">
               <h5>Shreyashi Debnath</h5>
               <h6>Art Director</h6>
             </div>
@@ -88,13 +88,13 @@ const AboutTeams = () => {
                 alt=""
               />
               <a
-                class="popup-youtube video_popup video_popup_custom"
+                className="popup-youtube video_popup video_popup_custom"
                 href="https://www.youtube.com/watch?v=BMEFLNf8_Vw"
               >
-                <i class="fa fa-play"></i>
+                <i className="fa fa-play"></i>
               </a>
             </div>
-            <div class="detail_TM">
+            <div className="detail_TM">
               <h5>Pradyumna Chopde</h5>
               <h6>Graphic Designer</h6>
             </div>
@@ -108,13 +108,13 @@ const AboutTeams = () => {
               />
             </div>
             {/* <a
-                class="popup-youtube video_popup video_popup_custom"
+                className="popup-youtube video_popup video_popup_custom"
                 href="https://www.youtube.com/watch?v=GalyeiTohOI"
                 tabindex="0"
               >
-                <i class="fa fa-play"></i>
+                <i className="fa fa-play"></i>
               </a> */}
-            <div class="detail_TM">
+            <div className="detail_TM">
               <h5>Abhishek Kollat</h5>
               <h6>Video Editor</h6>
             </div>
@@ -127,16 +127,16 @@ const AboutTeams = () => {
                 alt=""
               />
             </div>
-            <div class="detail_TM">
+            <div className="detail_TM">
               <h5>Akash Patel</h5>
               <h6>Motion Graphic Designer / Animator</h6>
             </div>
             {/* <a
-                class="popup-youtube video_popup video_popup_custom"
+                className="popup-youtube video_popup video_popup_custom"
                 href="https://www.youtube.com/watch?v=QAVWyUy0jF0"
                 tabindex="-1"
               >
-                <i class="fa fa-play"></i>
+                <i className="fa fa-play"></i>
               </a> */}
           </div>
 
@@ -147,13 +147,13 @@ const AboutTeams = () => {
                 alt=""
               />
               <a
-                class="popup-youtube video_popup video_popup_custom"
+                className="popup-youtube video_popup video_popup_custom"
                 href="https://www.youtube.com/watch?v=QAVWyUy0jF0"
               >
-                <i class="fa fa-play"></i>
+                <i className="fa fa-play"></i>
               </a>
             </div>
-            <div class="detail_TM">
+            <div className="detail_TM">
               <h5>Rachna Dadlani</h5>
               <h6>Content Head</h6>
             </div>
@@ -166,13 +166,13 @@ const AboutTeams = () => {
                 alt=""
               />
               <a
-                class="popup-youtube video_popup video_popup_custom"
+                className="popup-youtube video_popup video_popup_custom"
                 href="https://www.youtube.com/watch?v=GalyeiTohOI"
               >
-                <i class="fa fa-play"></i>
+                <i className="fa fa-play"></i>
               </a>
             </div>
-            <div class="detail_TM">
+            <div className="detail_TM">
               <h5>Amey Asuti</h5>
               <h6>Founder</h6>
             </div>
@@ -186,13 +186,13 @@ const AboutTeams = () => {
               />
             </div>
             {/* <a
-                class="popup-youtube video_popup video_popup_custom"
+                className="popup-youtube video_popup video_popup_custom"
                 href="https://www.youtube.com/watch?v=QAVWyUy0jF0"
                 tabindex="-1"
               >
-                <i class="fa fa-play"></i>
+                <i className="fa fa-play"></i>
               </a> */}
-            <div class="detail_TM">
+            <div className="detail_TM">
               <h5>Abhishek Chaturvedi</h5>
               <h6>Video Editor</h6>
             </div>

@@ -1,0 +1,14 @@
+/* .tab-content-box {
+  animation-name: transformBox;
+  animation-duration: 0.5s;
+  transform: scale(0.1);
+}
+
+@keyframes transformBox {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+} */

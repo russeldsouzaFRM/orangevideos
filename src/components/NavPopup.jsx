@@ -70,9 +70,9 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                                         </ul>--> */}
                     </li>
                     <li className="">
-                      <a href="./portfolio.php" onClick={clickFunc}>
+                      <Link to="portfolio" onClick={clickFunc}>
                         portfolio
-                      </a>
+                      </Link>
                       {/* <!--<ul className="dl-submenu">
                                             <li><a href="portfolio.html">Portfolio v1</a></li>
                                             <li><a href="portfolio2.html">Portfolio v2</a></li>

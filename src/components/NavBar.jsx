@@ -54,7 +54,7 @@ const NavBar = () => {
                     <Link to="/video-services">services</Link>
                   </li>
                   <li className="">
-                    <a href="./portfolio.php">portfolio</a>
+                    <Link to="portfolio">portfolio</Link>
                     {/* <!--<ul className="sub-menu">
                                         <li><a href="portfolio.html">Portfolio v1</a></li>
                                         <li><a href="portfolio2.html">Portfolio v2</a></li>

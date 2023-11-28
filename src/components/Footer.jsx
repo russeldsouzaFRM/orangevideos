@@ -1,4 +1,26 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const [changeScrollClassName, setChangeScrollClassName] = useState("");
+
+  useEffect(() => {
+    const winScroll = () => {
+      if (document.documentElement.scrollTop > 100) {
+        setChangeScrollClassName("showit");
+      } else {
+        setChangeScrollClassName("");
+      }
+    };
+    window.addEventListener("scroll", winScroll);
+  }, []);
   return (
     <>
       <footer className="footer_1">
@@ -123,6 +145,29 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+      {/* whatsapp floating img */}
+      <div className="floating_whatsapp">
+        <a href="https://wa.me/919867409221" target="_blank" rel="noreferrer">
+          <img
+            src="../assets-new/images/whatsapp.png"
+            className="whatsapp_img"
+            alt=""
+          />
+        </a>
+      </div>
+
+      {/* <Link id="backToTop" to="#" className="showit">
+        <i className="fa fa-angle-double-up"></i>
+      </Link> */}
+
+      <span
+        id="backToTop"
+        to="#"
+        className={changeScrollClassName}
+        onClick={handleScrollToTop}
+      >
+        <i className="fa fa-angle-double-up"></i>
+      </span>
     </>
   );
 };
