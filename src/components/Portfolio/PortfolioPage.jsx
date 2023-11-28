@@ -1,11 +1,28 @@
+import { useEffect } from "react";
 import TabComponent from "./TestComponent";
 import "../styles/Portfolio.css";
+import { motion } from "framer-motion";
+import { useLocation } from "react-router-dom";
 
 const PortfolioPage = () => {
+  const pathname = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
       {/* section 1 */}
-      <section className="pageBanner portfolio-banner">
+      <motion.section
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+        className="pageBanner portfolio-banner"
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -18,12 +35,22 @@ const PortfolioPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* section 2 */}
-      <section className="commonSection porfolioPage">
+      <motion.section
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+        className="commonSection porfolioPage"
+      >
         <TabComponent />
-      </section>
+      </motion.section>
     </>
   );
 };

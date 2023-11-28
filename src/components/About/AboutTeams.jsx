@@ -5,9 +5,10 @@ const AboutTeams = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     initialSlide: 0,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -62,10 +63,7 @@ const AboutTeams = () => {
 
           <div className="singleTM">
             <div className="tm_img singlefolio mb-0">
-              <img
-                src="../assets-new/images/about/team/shreyashi.jpg"
-                alt=""
-              />
+              <img src="../assets-new/images/about/team/shreyashi.jpg" alt="" />
             </div>
             {/* <a
                 className="popup-youtube video_popup video_popup_custom"

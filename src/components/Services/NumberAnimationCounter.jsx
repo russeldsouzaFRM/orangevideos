@@ -21,6 +21,8 @@ const NumberAnimationCounter = ({ from, to, duration, delay }) => {
     };
   }, [currentNumber, to, duration]);
 
+  
+
   return (
     <motion.span
       animate={{

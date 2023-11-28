@@ -9,6 +9,8 @@ const ServicePage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  
   return (
     <>
       {/* section 1 */}
