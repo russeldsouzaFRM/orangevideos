@@ -62,12 +62,12 @@ const NavBar = () => {
                                     </ul>--> */}
                   </li>
                   <li className="d-inline-flex align-items-center">
-                    <a href="./careers.php">
+                    <Link to="/careers">
                       <span className="">careers </span>
-                    </a>
-                    <a className="career-a" href="./careers.php#join-us">
+                    </Link>
+                    <Link className="career-a" to="/careers">
                       <span className="apply-now">Apply</span>{" "}
-                    </a>
+                    </Link>
                     {/* <!--<ul className="sub-menu">
                                         <li><a href="blog.html">Blog v1</a></li>
                                         <li><a href="blog2.html">Blog v2</a></li>
@@ -76,7 +76,7 @@ const NavBar = () => {
                                     </ul>--> */}
                   </li>
                   <li>
-                    <a href="./contact-us.php">Contact</a>
+                    <Link to="/contact">Contact</Link>
                   </li>
                 </ul>
               </nav>

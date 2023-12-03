@@ -70,7 +70,7 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                                         </ul>--> */}
                     </li>
                     <li className="">
-                      <Link to="portfolio" onClick={clickFunc}>
+                      <Link to="/portfolio" onClick={clickFunc}>
                         portfolio
                       </Link>
                       {/* <!--<ul className="dl-submenu">
@@ -105,19 +105,19 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                       </a>
                     </li>
                     <li className="d-inline-flex align-items-center">
-                      <a href="./careers.php" onClick={clickFunc}>
+                      <Link to="/careers" onClick={clickFunc}>
                         <span className="">careers </span>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="career-a"
-                        href="./careers.php#join-us"
+                        to="/careers"
                         onClick={clickFunc}
                       >
                         <span className="apply-now">Apply</span>
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="./contact-us.php">contact</a>
+                      <Link to="/contact">contact</Link>
                     </li>
                   </ul>
                 </div>

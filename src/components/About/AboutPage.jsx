@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/about.css";
 import { Link, useLocation } from "react-router-dom";
 import AboutTeams from "./AboutTeams";
+import { motion } from "framer-motion";
 
 const AboutPage = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -21,7 +22,17 @@ const AboutPage = () => {
   return (
     <>
       {/* section 1 */}
-      <section className="pageBanner about-us-banner">
+      <motion.section
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+        className="pageBanner about-us-banner"
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -34,10 +45,20 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* section 2 */}
-      <section className="commonSection">
+      <motion.section
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+        className="commonSection"
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-sm-6 col-md-6">
@@ -70,10 +91,20 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* section 3 */}
-      <section className="commonSection team featured">
+      <motion.section
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
+        className="commonSection team featured"
+      >
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
@@ -89,18 +120,23 @@ const AboutPage = () => {
           </div>
         </div>
         <AboutTeams />
-      </section>
+      </motion.section>
 
       {/* section 4 */}
-      <section
+      <motion.section
+        initial="hide"
+        whileInView="view"
+        viewport={{ once: true }}
+        variants={{
+          view: { opacity: 1, y: 0 },
+          hide: { opacity: 0, y: 100 },
+        }}
+        transition={{ duration: 1 }}
         className="commonSection our_work"
         style={{ backgroundColor: "transparent" }}
       >
         <div className="videoWrap_2">
-          <img
-            src="../assets-new/images/about/about-us-showreel.jpg"
-            alt=""
-          />
+          <img src="../assets-new/images/about/about-us-showreel.jpg" alt="" />
           <div className="play_video">
             {/* <!--<h4 className="sub_title mb-3" >Over showreel</h4>--> */}
             <a
@@ -148,7 +184,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
       {/* below is the yt video popup */}
       {showPopup ? (
         <div className="popup-vid-cotainer">

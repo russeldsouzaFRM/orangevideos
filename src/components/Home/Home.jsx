@@ -83,9 +83,9 @@ const Home = () => {
               </h2>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3 text-right mobile-center">
-              <a className="common_btn bg-white-button" href="contact-us.php">
+              <Link className="common_btn bg-white-button" to="/contact">
                 <span>let’s talk</span>
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>
@@ -393,7 +393,7 @@ const Home = () => {
                 <br />
                 Our secret recipe? Passion, a brand-oriented focus, and
                 out-of-the-box thinking!{" "}
-                <a href="contact-us.php">
+                <Link to="/contact">
                   <span
                     style={{
                       borderBottom: "1px solid #ff950d",
@@ -402,7 +402,7 @@ const Home = () => {
                   >
                     Give us a try
                   </span>
-                </a>{" "}
+                </Link>{" "}
                 and see for yourself!
               </p>
             </div>
