@@ -1,6 +1,6 @@
 ## Roshan check below firebase URL
 https://orangevideos.web.app/
-created Home, About us, Services, Portfolio, careers & it's subpages like apply and more info pages, contact us
+pages created - Home, About us, Services, Portfolio, careers & it's subpages like apply and more info pages, contact us
 
 ## Getting Started with Create React App
 
