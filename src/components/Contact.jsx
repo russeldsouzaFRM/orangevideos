@@ -42,24 +42,24 @@ const Contact = () => {
           hide: { opacity: 0, y: 100 },
         }}
         transition={{ duration: 1 }}
-        class="commonSection ContactPage"
+        className="commonSection ContactPage"
       >
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h4 class="sub_title">Contact with us</h4>
-              <h2 class="sec_title">we would love to hear from you!</h2>
-              <p class="sec_desc">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <h4 className="sub_title">Contact with us</h4>
+              <h2 className="sec_title">we would love to hear from you!</h2>
+              <p className="sec_desc">
                 Tell us a bit about your project needs (timeline, budget, etc.)
                 and we will get back to you within 24 hours.
               </p>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-sm-12 col-md-10 col-md-offset-1">
-              <div class="contactForm" id="contactForm">
-                <div class="row">
-                  <div class="col-lg-6 col-sm-6">
+          <div className="row">
+            <div className="col-lg-8 col-lg-offset-2 col-sm-12 col-md-10 col-md-offset-1">
+              <div className="contactForm" id="contactForm">
+                <div className="row">
+                  <div className="col-lg-6 col-sm-6">
                     {/* <!--<motion.input initial="hide"
         whileInView="view"
         viewport={{ once: true }}
@@ -67,7 +67,7 @@ const Contact = () => {
           view: { opacity: 1, y: 0 },
           hide: { opacity: 0, y: 100 },
         }}
-        transition={{ duration: 1 }} class="input-form required" type="text" name="career_f_name" id="career_f_name" placeholder="First Name">--> */}
+        transition={{ duration: 1 }} className="input-form required" type="text" name="career_f_name" id="career_f_name" placeholder="First Name">--> */}
                     <motion.input
                       initial="hide"
                       whileInView="view"
@@ -77,14 +77,14 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      class="input-form required"
+                      className="input-form required"
                       type="text"
                       name="contact_name"
                       id="contact_name"
                       placeholder="Your Name"
                     />
                   </div>
-                  {/* <!--<div class="col-lg-6 col-sm-6"> */}
+                  {/* <!--<div className="col-lg-6 col-sm-6"> */}
                   {/* <motion.input initial="hide"
         whileInView="view"
         viewport={{ once: true }}
@@ -92,9 +92,9 @@ const Contact = () => {
           view: { opacity: 1, y: 0 },
           hide: { opacity: 0, y: 100 },
         }}
-        transition={{ duration: 1 }} class="input-form required" type="text" name="career_l_name" id="career_l_name" placeholder="Last Name"> */}
+        transition={{ duration: 1 }} className="input-form required" type="text" name="career_l_name" id="career_l_name" placeholder="Last Name"> */}
                   {/* </div>--> */}
-                  <div class="col-lg-6 col-sm-6">
+                  <div className="col-lg-6 col-sm-6">
                     <motion.input
                       initial="hide"
                       whileInView="view"
@@ -104,14 +104,14 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      class="input-form required"
+                      className="input-form required"
                       type="email"
                       name="contact_email"
                       id="contact_email"
                       placeholder="Email Address"
                     />
                   </div>
-                  <div class="col-lg-6 col-sm-6">
+                  <div className="col-lg-6 col-sm-6">
                     <motion.input
                       initial="hide"
                       whileInView="view"
@@ -121,7 +121,7 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      class="input-form"
+                      className="input-form"
                       type="text"
                       name="contact_phone"
                       id="contact_phone"
@@ -134,9 +134,9 @@ const Contact = () => {
           view: { opacity: 1, y: 0 },
           hide: { opacity: 0, y: 100 },
         }}
-        transition={{ duration: 1 }} class="input-form" type="tel" name="contact_phone" id="contact_phone" placeholder="Mobile Number">--> */}
+        transition={{ duration: 1 }} className="input-form" type="tel" name="contact_phone" id="contact_phone" placeholder="Mobile Number">--> */}
                   </div>
-                  <div class="col-lg-6 col-sm-6">
+                  <div className="col-lg-6 col-sm-6">
                     {/* <!--<motion.input initial="hide"
         whileInView="view"
         viewport={{ once: true }}
@@ -144,7 +144,7 @@ const Contact = () => {
           view: { opacity: 1, y: 0 },
           hide: { opacity: 0, y: 100 },
         }}
-        transition={{ duration: 1 }} class="input-form required" type="text" name="career_experience" id="career_experience" placeholder="Experience (ex: X years X months)">--> */}
+        transition={{ duration: 1 }} className="input-form required" type="text" name="career_experience" id="career_experience" placeholder="Experience (ex: X years X months)">--> */}
                     <motion.input
                       initial="hide"
                       whileInView="view"
@@ -154,14 +154,14 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      class="input-form required"
+                      className="input-form required"
                       type="text"
                       name="contact_org_name"
                       id="contact_org_name"
                       placeholder="Organisation’s Name"
                     />
                   </div>
-                  <div class="col-lg-6 col-sm-6">
+                  <div className="col-lg-6 col-sm-6">
                     {/* <!--<motion.input initial="hide"
         whileInView="view"
         viewport={{ once: true }}
@@ -169,7 +169,7 @@ const Contact = () => {
           view: { opacity: 1, y: 0 },
           hide: { opacity: 0, y: 100 },
         }}
-        transition={{ duration: 1 }} class="input-form required" type="text" name="contact_designation" id="contact_designation" placeholder="Current CTC (per annum)">--> */}
+        transition={{ duration: 1 }} className="input-form required" type="text" name="contact_designation" id="contact_designation" placeholder="Current CTC (per annum)">--> */}
                     <motion.select
                       initial="hide"
                       whileInView="view"
@@ -179,7 +179,7 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      class="input-form"
+                      className="input-form"
                       name="contact_designation"
                       id="contact_designation"
                     >
@@ -206,7 +206,7 @@ const Contact = () => {
                       <option value="Other">Other</option>
                     </motion.select>
                   </div>
-                  <div class="col-lg-6 col-sm-6">
+                  <div className="col-lg-6 col-sm-6">
                     {/* <!--<motion.input initial="hide"
         whileInView="view"
         viewport={{ once: true }}
@@ -214,7 +214,7 @@ const Contact = () => {
           view: { opacity: 1, y: 0 },
           hide: { opacity: 0, y: 100 },
         }}
-        transition={{ duration: 1 }} class="input-form required" type="text" name="contact_service" id="contact_service" placeholder="Expected CTC (per annum)">--> */}
+        transition={{ duration: 1 }} className="input-form required" type="text" name="contact_service" id="contact_service" placeholder="Expected CTC (per annum)">--> */}
                     <motion.select
                       initial="hide"
                       whileInView="view"
@@ -224,7 +224,7 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      class="input-form"
+                      className="input-form"
                       name="contact_service"
                       id="contact_service"
                     >
@@ -241,7 +241,7 @@ const Contact = () => {
                       <option value="Other">Other</option>
                     </motion.select>
                   </div>
-                  <div class="col-lg-6 col-sm-6">
+                  <div className="col-lg-6 col-sm-6">
                     {/* <!--<motion.input initial="hide"
         whileInView="view"
         viewport={{ once: true }}
@@ -249,7 +249,7 @@ const Contact = () => {
           view: { opacity: 1, y: 0 },
           hide: { opacity: 0, y: 100 },
         }}
-        transition={{ duration: 1 }} class="input-form required" type="text" name="career_notice_period" id="career_notice_period" placeholder="Notice Period (in Days)">--> */}
+        transition={{ duration: 1 }} className="input-form required" type="text" name="career_notice_period" id="career_notice_period" placeholder="Notice Period (in Days)">--> */}
                     <motion.input
                       initial="hide"
                       whileInView="view"
@@ -259,14 +259,14 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      class="input-form required"
+                      className="input-form required"
                       type="number"
                       name="contact_budget"
                       id="contact_budget"
                       placeholder="Budget"
                     />
                   </div>
-                  <div class="col-lg-6 col-sm-6">
+                  <div className="col-lg-6 col-sm-6">
                     {/* <!--<motion.input initial="hide"
         whileInView="view"
         viewport={{ once: true }}
@@ -274,7 +274,7 @@ const Contact = () => {
           view: { opacity: 1, y: 0 },
           hide: { opacity: 0, y: 100 },
         }}
-        transition={{ duration: 1 }} class="input-form required" type="text" name="career_earliest_date" id="career_earliest_date" placeholder="Earliest Date of Joining (in Days)">--> */}
+        transition={{ duration: 1 }} className="input-form required" type="text" name="career_earliest_date" id="career_earliest_date" placeholder="Earliest Date of Joining (in Days)">--> */}
                     <motion.input
                       initial="hide"
                       whileInView="view"
@@ -284,14 +284,14 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      class="input-form required"
+                      className="input-form required"
                       type="text"
                       name="contact_deadline"
                       id="contact_deadline"
                       placeholder="Deadline(in days)"
                     />
                   </div>
-                  <div class="col-lg-6 col-sm-6">
+                  <div className="col-lg-6 col-sm-6">
                     {/* <!--<motion.input initial="hide"
         whileInView="view"
         viewport={{ once: true }}
@@ -299,10 +299,10 @@ const Contact = () => {
           view: { opacity: 1, y: 0 },
           hide: { opacity: 0, y: 100 },
         }}
-        transition={{ duration: 1 }} class="input-form" type="file" name="career_resume" id="career_resume">--> */}
+        transition={{ duration: 1 }} className="input-form" type="file" name="career_resume" id="career_resume">--> */}
                     {/* <!--<span id='document_upload_error'></span>--> */}
                   </div>
-                  <div class="col-lg-12 col-sm-12">
+                  <div className="col-lg-12 col-sm-12">
                     <motion.textarea
                       initial="hide"
                       whileInView="view"
@@ -312,7 +312,7 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      class="input-form required"
+                      className="input-form required"
                       type="text"
                       name="contact_message"
                       id="contact_message"
@@ -326,7 +326,7 @@ const Contact = () => {
           view: { opacity: 1, y: 0 },
           hide: { opacity: 0, y: 100 },
         }}
-        transition={{ duration: 1 }} class="input-form" type="hidden" name="career_apply_for" id="career_apply_for" value='Video Editing'>--> */}
+        transition={{ duration: 1 }} className="input-form" type="hidden" name="career_apply_for" id="career_apply_for" value='Video Editing'>--> */}
                 </div>
                 <motion.button
                   initial="hide"
@@ -337,7 +337,7 @@ const Contact = () => {
                     hide: { opacity: 0, y: 100 },
                   }}
                   transition={{ duration: 1 }}
-                  class="common_btn red_bg"
+                  className="common_btn red_bg"
                   id="career_form_button"
                 >
                   <span>Send Message</span>

@@ -11,6 +11,7 @@ import ApplyForm from "./careers/ApplyForm/ApplyForm";
 import PageNotFound from "./PageNotFound";
 import Videographers from "./careers/JobInfoComponents/Videographers";
 import Contact from "./Contact";
+import OrangeStudio from "./Studio/OrangeStudio";
 
 const AnimatedRoutes = () => {
   return (
@@ -29,6 +30,7 @@ const AnimatedRoutes = () => {
         <Route exact path="/videographers-apply" element={<ApplyForm />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="*" element={<PageNotFound />} />
+        <Route exace path="/studio" element={<OrangeStudio />} />
       </Routes>
     </AnimatePresence>
   );

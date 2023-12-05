@@ -90,9 +90,9 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                       </a>
                     </li>
                     <li>
-                      <a href="./studio.php" onClick={clickFunc}>
+                      <Link to="/studio" onClick={clickFunc}>
                         Orange Studios
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a href="./clients.php" onClick={clickFunc}>
