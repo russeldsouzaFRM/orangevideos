@@ -1,5 +1,6 @@
-import { Routes, Route } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+import React from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 import Home from "./Home/Home";
 import AboutPage from "./About/AboutPage";
 import ServicePage from "./Services/ServicePage";
@@ -12,27 +13,191 @@ import PageNotFound from "./PageNotFound";
 import Videographers from "./careers/JobInfoComponents/Videographers";
 import Contact from "./Contact";
 import OrangeStudio from "./Studio/OrangeStudio";
+import ClientsPage from "./clients/ClientsPage";
+import InsightsPage from "./insights/InsightsPage";
+
+const PageTransition = ({ children }) => {
+  const location = useLocation();
+
+  const pageTransitionVariants = {
+    initial: {
+      opacity: 0,
+      translateX: "100%", // Start from right and move to the center
+    },
+    animate: {
+      opacity: 1,
+      translateX: "0%", // Move to the center
+      transition: {
+        ease: "easeInOut",
+        duration: 1,
+      },
+    },
+    exit: {
+      opacity: 0,
+      translateX: "-100%", // Move to the left
+      transition: {
+        ease: "easeInOut",
+        duration: 0.5,
+      },
+    },
+  };
+
+  // Adjust animation for the back direction
+  if (location.action === "POP") {
+    pageTransitionVariants.animate.translateX = "100%"; // Move to the right
+    pageTransitionVariants.exit.translateX = "0%"; // Move to the center
+  }
+
+  return (
+    <AnimatePresence>
+      <motion.div
+        key={location.pathname}
+        initial="initial"
+        animate="animate"
+        exit="exit"
+        variants={pageTransitionVariants}
+        style={{
+          position: "relative",
+          minHeight: "100vh",
+          background: "#fff",
+          overflow: "hidden",
+        }}
+      >
+        {children}
+      </motion.div>
+    </AnimatePresence>
+  );
+};
 
 const AnimatedRoutes = () => {
   return (
-    <AnimatePresence>
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/about-us" element={<AboutPage />} />
-        <Route exact path="/video-services" element={<ServicePage />} />
-        <Route exact path="/portfolio" element={<PortfolioPage />} />
-        <Route exact path="/careers" element={<CareersPage />} />
-        <Route exact path="/account-manager" element={<AccountManager />} />
-        <Route exact path="/video-editing" element={<VideoEditing />} />
-        <Route exact path="/videographers" element={<Videographers />} />
-        <Route exact path="/account-manager-apply" element={<ApplyForm />} />
-        <Route exact path="/video-editing-apply" element={<ApplyForm />} />
-        <Route exact path="/videographers-apply" element={<ApplyForm />} />
-        <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="*" element={<PageNotFound />} />
-        <Route exace path="/studio" element={<OrangeStudio />} />
-      </Routes>
-    </AnimatePresence>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <PageTransition>
+            <Home />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/about-us"
+        element={
+          <PageTransition>
+            <AboutPage />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/video-services"
+        element={
+          <PageTransition>
+            <ServicePage />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/portfolio"
+        element={
+          <PageTransition>
+            <PortfolioPage />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/careers"
+        element={
+          <PageTransition>
+            <CareersPage />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/account-manager"
+        element={
+          <PageTransition>
+            <AccountManager />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/video-editing"
+        element={
+          <PageTransition>
+            <VideoEditing />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/videographers"
+        element={
+          <PageTransition>
+            <Videographers />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/account-manager-apply"
+        element={
+          <PageTransition>
+            <ApplyForm />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/video-editing-apply"
+        element={
+          <PageTransition>
+            <ApplyForm />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/videographers-apply"
+        element={
+          <PageTransition>
+            <ApplyForm />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/contact"
+        element={
+          <PageTransition>
+            <Contact />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/clients"
+        element={
+          <PageTransition>
+            <ClientsPage />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/insights"
+        element={
+          <PageTransition>
+            <InsightsPage />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/studio"
+        element={
+          <PageTransition>
+            <OrangeStudio />
+          </PageTransition>
+        }
+      />
+      <Route path="*" element={
+          <PageTransition>
+            <PageNotFound />
+          </PageTransition>
+        } />
+    </Routes>
   );
 };
 

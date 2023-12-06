@@ -3,6 +3,7 @@ import "../styles/studio.css";
 import { Link, useLocation } from "react-router-dom";
 import Fancybox from "./Fancybox";
 import { motion } from "framer-motion";
+import Playvideo from "./corporate-video-production/video/web-banner-v1.mp4";
 
 // const Fancybox = lazy(() => import("./Fancybox"));
 
@@ -272,6 +273,263 @@ const OrangeStudio = () => {
                 ))}
               </div>
             </Fancybox>
+          </div>
+        </div>
+      </section>
+
+      {/* section 4 */}
+      <section className="layput-section">
+        <div className="container">
+          <div className="row">
+            <motion.div
+              initial="hide"
+              whileInView="view"
+              viewport={{ once: true }}
+              variants={{
+                view: { opacity: 1, y: 0 },
+                hide: { opacity: 0, y: 100 },
+              }}
+              transition={{ duration: 1 }}
+              className="col-lg-7 col-sm-7 col-md-7"
+            >
+              <img src="assets-new/images/studio/layout-1.png" alt="" />
+            </motion.div>
+            <div className="col-lg-5 col-sm-5 col-md-5">
+              {/* <!--<h2 className="space-cls">A - Office with workstations</h2>-->
+                        <!--<h2 className="space-cls">B - Editing room</h2>-->
+                        <!--<h2 className="space-cls">C - Open Rooftop Area</h2>--> */}
+              <motion.div
+                initial="hide"
+                whileInView="view"
+                viewport={{ once: true }}
+                variants={{
+                  view: { opacity: 1, y: 0 },
+                  hide: { opacity: 0, y: 100 },
+                }}
+                transition={{ duration: 1 }}
+                className="opening-time col-md-12 white-div"
+              >
+                <h3 className="">
+                  <i className="fa fa-clock-o"></i>
+                  Opening Timings
+                  {/* <!--<div className="border-1"></div>-->
+                            <!--<div className="border-2"></div>--> */}
+                </h3>
+
+                <ul className="factsheet-ul">
+                  <li>
+                    Open for hire on all days of the week with flexible timings
+                    from 10:00 am to 7:00 pm.
+                  </li>
+                </ul>
+              </motion.div>
+
+              {/* <!-- <br> --> */}
+              <motion.div
+                initial="hide"
+                whileInView="view"
+                viewport={{ once: true }}
+                variants={{
+                  view: { opacity: 1, y: 0 },
+                  hide: { opacity: 0, y: 100 },
+                }}
+                transition={{ duration: 1 }}
+                className=" col-md-12 white-div"
+              >
+                <h3 className="">
+                  <i className="fa fa-phone"></i>
+                  Contact
+                  {/* <!--<div className="border-1"></div>-->
+                                <!--<div className="border-2"></div>--> */}
+                </h3>
+
+                <ul className="factsheet-ul">
+                  <li>
+                    Email:{" "}
+                    <a href="mailto:sales@orangevideos.in" className="">
+                      sales@orangevideos.in
+                    </a>
+                  </li>
+                  <li>
+                    Phone:{" "}
+                    <a href="tel:+919867409221" className="">
+                      +91 98674 09221{" "}
+                    </a>
+                  </li>
+                </ul>
+              </motion.div>
+
+              <motion.div
+                initial="hide"
+                whileInView="view"
+                viewport={{ once: true }}
+                variants={{
+                  view: { opacity: 1, y: 0 },
+                  hide: { opacity: 0, y: 100 },
+                }}
+                transition={{ duration: 1 }}
+                className=""
+              >
+                <a className="white_btn">
+                  Download Factsheet &nbsp; <i className="fa fa-download"></i>
+                </a>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* section 5 */}
+      <section className="video-sec">
+        <div className="container text-center">
+          <div className="col-md-12 col-xs-9 text-center video-div">
+            <motion.h1
+              initial="hide"
+              whileInView="view"
+              viewport={{ once: true }}
+              variants={{
+                view: { opacity: 1, y: 0 },
+                hide: { opacity: 0, y: 100 },
+              }}
+              transition={{ duration: 1 }}
+              className="sec-heading"
+            >
+              Video
+            </motion.h1>
+            <motion.video
+              initial="hide"
+              whileInView="view"
+              viewport={{ once: true }}
+              variants={{
+                view: { opacity: 1, y: 0 },
+                hide: { opacity: 0, y: 100 },
+              }}
+              transition={{ duration: 1 }}
+              autoPlay
+              muted
+              loop
+              id="myVideo"
+              className="video-v"
+            >
+              <source src={Playvideo} type="video/mp4" />
+            </motion.video>
+          </div>
+        </div>
+      </section>
+
+      {/* section 6 */}
+      <section className="factsheet-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-7">
+              <div className="row">
+                <motion.div
+                  initial="hide"
+                  whileInView="view"
+                  viewport={{ once: true }}
+                  variants={{
+                    view: { opacity: 1, y: 0 },
+                    hide: { opacity: 0, y: 100 },
+                  }}
+                  transition={{ duration: 1 }}
+                  className="col-md-6 col-xs-6 factsheet-div"
+                >
+                  <h3 className="factsheet-heading">
+                    <i className="fa fa-info-circle"></i>
+                    Features
+                    <div className="border-1"></div>
+                    <div className="border-2"></div>
+                  </h3>
+
+                  <ul className="factsheet-ul">
+                    <li>Wifi</li>
+                    <li>Sound system</li>
+                    <li>AV equipment</li>
+                    <li>Catering partners can be recommended for events</li>
+                    <li>Flipchart</li>
+                    <li>Kitchenette</li>
+                    <li>Projector</li>
+                    <li>Showers and Changing Room Facilities</li>
+                  </ul>
+                </motion.div>
+                <motion.div
+                  initial="hide"
+                  whileInView="view"
+                  viewport={{ once: true }}
+                  variants={{
+                    view: { opacity: 1, y: 0 },
+                    hide: { opacity: 0, y: 100 },
+                  }}
+                  transition={{ duration: 1 }}
+                  className="col-md-6 col-xs-6 factsheet-div"
+                >
+                  <h3 className="factsheet-heading">
+                    <i className="fa fa-cutlery"></i>
+                    Food And Drink
+                    <div className="border-1"></div>
+                    <div className="border-2"></div>
+                  </h3>
+
+                  <ul className="factsheet-ul">
+                    <li>External catering allowed</li>
+                    <li>Kitchenette</li>
+                    <li>Space for catering equipment</li>
+                  </ul>
+                </motion.div>
+              </div>
+            </div>
+            <div className="col-md-5">
+              <div className="row">
+                <motion.div
+                  initial="hide"
+                  whileInView="view"
+                  viewport={{ once: true }}
+                  variants={{
+                    view: { opacity: 1, y: 0 },
+                    hide: { opacity: 0, y: 100 },
+                  }}
+                  transition={{ duration: 1 }}
+                  className="col-md-7 col-xs-6 factsheet-div"
+                >
+                  <h3 className="factsheet-heading">
+                    <i className="fa fa-user"></i>
+                    Capacities
+                    <div className="border-1"></div>
+                    <div className="border-2"></div>
+                  </h3>
+
+                  <ul className="factsheet-ul">
+                    <li>50 Crew</li>
+                    <li>20 Workstations</li>
+                  </ul>
+                </motion.div>
+                <motion.div
+                  initial="hide"
+                  whileInView="view"
+                  viewport={{ once: true }}
+                  variants={{
+                    view: { opacity: 1, y: 0 },
+                    hide: { opacity: 0, y: 100 },
+                  }}
+                  transition={{ duration: 1 }}
+                  className="col-md-5 col-xs-6 factsheet-div"
+                >
+                  <h3 className="factsheet-heading">
+                    <i className="fa fa-arrows"></i>
+                    Space
+                    <div className="border-1"></div>
+                    <div className="border-2"></div>
+                  </h3>
+
+                  <ul className="factsheet-ul">
+                    <li>Wifi</li>
+                    <li>Sound system</li>
+                    <li>AV equipment</li>
+                    <li>Flipchart</li>
+                  </ul>
+                </motion.div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

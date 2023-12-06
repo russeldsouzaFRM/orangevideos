@@ -95,14 +95,14 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                       </Link>
                     </li>
                     <li>
-                      <a href="./clients.php" onClick={clickFunc}>
+                      <Link to="/clients" onClick={clickFunc}>
                         clients
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="./insights.php" onClick={clickFunc}>
+                      <Link to="/insights" onClick={clickFunc}>
                         insights
-                      </a>
+                      </Link>
                     </li>
                     <li className="d-inline-flex align-items-center">
                       <Link to="/careers" onClick={clickFunc}>
