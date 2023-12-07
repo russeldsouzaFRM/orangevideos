@@ -1,6 +1,7 @@
 ## Roshan check below firebase URL
 https://orangevideos.web.app/
-pages created - Home, About us, Services, Portfolio, careers & it's subpages like apply and more info pages, contact us
+pages done  - home, about, services, portfolio, careers(it's sub-pages), contact, OUR PROCESS, ORANGE STUDIOS, CLIENTS, INSIGHTS page.
+not done pages - INSIGHTS some small pages linked on services flip card 
 
 ## Getting Started with Create React App
 
