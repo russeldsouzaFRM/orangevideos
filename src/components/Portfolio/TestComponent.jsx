@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // const data = [
@@ -375,6 +375,9 @@ const TabComponent = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [showPopupVid, setShowPopupVid] = useState("");
 
+  useEffect(() => {
+    document.body.style.overflowY = showPopup ? "hidden" : "auto";
+  }, [showPopup]);
   const handlePopup = () => {
     setShowPopup(showPopup ? "false" : "true");
   };

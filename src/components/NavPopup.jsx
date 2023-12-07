@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
@@ -14,21 +15,21 @@ const NavPopup = ({ clickFunc, showPopup }) => {
         }`}
       >
         <a
-          href="avascript:void(0);"
+          href="/"
           id="close-popup"
           className="close-popup"
           rel="noreferrer"
-          onClick={clickFunc}
+          onClick={(e) => {
+            clickFunc();
+            e.preventDefault();
+          }}
         ></a>
         <div className="container mobileContainer">
           <div className="row">
             <div className="col-lg-12 text-left">
               <div className="logo2">
                 <Link to="/" onClick={clickFunc}>
-                  <img
-                    src="../assets-new/images/logo (1).svg"
-                    alt=""
-                  />
+                  <img src="../assets-new/images/logo (1).svg" alt="" />
                 </Link>
               </div>
             </div>

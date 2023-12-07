@@ -261,6 +261,7 @@ const OrangeStudio = () => {
                       <a
                         data-fancybox="gallery"
                         href={`assets-new/images/gallery/${item.imgSrc}`}
+                        onClick={(e) => e.preventDefault()}
                       >
                         <img
                           src={`../../assets-new/images/gallery/${item.imgSrc}`}
@@ -370,7 +371,11 @@ const OrangeStudio = () => {
                 transition={{ duration: 1 }}
                 className=""
               >
-                <a className="white_btn">
+                <a
+                  className="white_btn"
+                  href="/"
+                  onClick={(e) => e.preventDefault()}
+                >
                   Download Factsheet &nbsp; <i className="fa fa-download"></i>
                 </a>
               </motion.div>

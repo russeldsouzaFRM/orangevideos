@@ -15,6 +15,11 @@ import Contact from "./Contact";
 import OrangeStudio from "./Studio/OrangeStudio";
 import ClientsPage from "./clients/ClientsPage";
 import InsightsPage from "./insights/InsightsPage";
+import ImportanceOfRacce from "./insights/ImportanceOfRacce";
+import VoiceOverAndItsRoleInVideos from "./insights/VoiceOverAndItsRoleInVideos";
+import ImportanceOfProductionDesign from "./insights/ImportanceOfProductionDesign";
+import TypesOfShotsInLiveShootVideos from "./insights/TypesOfShotsInLiveShootVideos";
+import AvBreakdownAProcessNeverToSkip from "./insights/AvBreakdownAProcessNeverToSkip";
 
 const PageTransition = ({ children }) => {
   const location = useLocation();
@@ -192,11 +197,54 @@ const AnimatedRoutes = () => {
           </PageTransition>
         }
       />
-      <Route path="*" element={
+      <Route
+        path="/importance-of-recce"
+        element={
+          <PageTransition>
+            <ImportanceOfRacce />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/voice-over-and-its-role-in-videos"
+        element={
+          <PageTransition>
+            <VoiceOverAndItsRoleInVideos />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/importance-of-production-design"
+        element={
+          <PageTransition>
+            <ImportanceOfProductionDesign />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/types-of-shots-in-live-shoot-videos"
+        element={
+          <PageTransition>
+            <TypesOfShotsInLiveShootVideos />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="/av-breakdown-a-process-never-to-skip"
+        element={
+          <PageTransition>
+            <AvBreakdownAProcessNeverToSkip />
+          </PageTransition>
+        }
+      />
+      <Route
+        path="*"
+        element={
           <PageTransition>
             <PageNotFound />
           </PageTransition>
-        } />
+        }
+      />
     </Routes>
   );
 };
