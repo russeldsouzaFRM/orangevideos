@@ -4,7 +4,7 @@ https://orangevideos.web.app/
 home, about, services, portfolio, careers(it's sub-pages), contact, OUR PROCESS, ORANGE STUDIOS, CLIENTS, INSIGHTS page.
 
 ## not done pages
-INSIGHTS subpages pages, services flip card pages and linked form linked to email 
+INSIGHTS subpages pages, services flip card pages and form link to email id
 
 ## Getting Started with Create React App
 
