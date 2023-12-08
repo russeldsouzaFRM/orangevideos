@@ -138,7 +138,6 @@ const InsightsPage = () => {
               </div>
             </div>
 
-            {/* not done */}
             <div class="col-lg-4 col-sm-6 col-md-4" style={{ height: "410px" }}>
               <div class="latestBlogItem">
                 <div class="lbi_thumb">
@@ -149,9 +148,9 @@ const InsightsPage = () => {
                 </div>
                 <div class="lbi_details">
                   <h2>
-                    <a href="symbo-a-digital-ad-film.php" target="_blank">
+                    <Link to="/symbo-a-digital-ad-film">
                       Symbo - A Digital Ad Film
-                    </a>
+                    </Link>
                   </h2>
                 </div>
               </div>
@@ -167,12 +166,9 @@ const InsightsPage = () => {
                 </div>
                 <div class="lbi_details">
                   <h2>
-                    <a
-                      href="Our-Corporate-Video-Production-Workflow.php"
-                      target="_blank"
-                    >
+                    <Link to="/Our-Corporate-Video-Production-Workflow">
                       Our Corporate Video Production Workflow
-                    </a>
+                    </Link>
                   </h2>
                   {/* <!--<a class="learnM" href="insights.php">Learn More</a>--> */}
                 </div>
@@ -188,12 +184,9 @@ const InsightsPage = () => {
                 </div>
                 <div class="lbi_details">
                   <h2>
-                    <a
-                      href="How-Much-Does-A-Corporate-Video-Cost.php"
-                      target="_blank"
-                    >
+                    <Link to="/How-Much-Does-A-Corporate-Video-Cost">
                       How Much Does A Corporate Video Cost?
-                    </a>
+                    </Link>
                   </h2>
                   {/* <!--<a class="learnM" href="insights.php">Learn More</a>--> */}
                 </div>
@@ -210,9 +203,9 @@ const InsightsPage = () => {
                 </div>
                 <div class="lbi_details">
                   <h2>
-                    <a href="4ds-of-video-production" target="_blank">
+                    <Link to="/4ds-of-video-production">
                       4Ds of Video Production
-                    </a>
+                    </Link>
                   </h2>
                   {/* <!--<a class="learnM" href="insights.php">Learn More</a>--> */}
                 </div>
@@ -229,13 +222,9 @@ const InsightsPage = () => {
                 </div>
                 <div class="lbi_details">
                   <h2>
-                    <a
-                      href="5-factors-that-affect-the-price-of-your-video"
-                      target="_blank"
-                    >
-                      {" "}
+                    <Link to="/5-factors-that-affect-the-price-of-your-video">
                       5 Factors that Affect the Price of your Video
-                    </a>
+                    </Link>
                   </h2>
                   {/* <!--<a class="learnM" href="insights.php">Learn More</a>--> */}
                 </div>
@@ -253,12 +242,9 @@ const InsightsPage = () => {
                 </div>
                 <div class="lbi_details">
                   <h2>
-                    <a
-                      href="the-importance-of-video-content-on-social-media"
-                      target="_blank"
-                    >
+                    <Link to="/the-importance-of-video-content-on-social-media">
                       The Importance of Video Content on Social Media
-                    </a>
+                    </Link>
                   </h2>
                   {/* <!--<a class="learnM" href="insights.php">Learn More</a>--> */}
                 </div>
@@ -275,9 +261,9 @@ const InsightsPage = () => {
                 </div>
                 <div class="lbi_details">
                   <h2>
-                    <a href="pros-and-cons-of-2d-animations" target="_blank">
+                    <Link to="/pros-and-cons-of-2d-animations">
                       Pros and Cons of 2D Animations
-                    </a>
+                    </Link>
                   </h2>
                   {/* <!--<a class="learnM" href="insights.php">Learn More</a>--> */}
                 </div>
@@ -295,12 +281,11 @@ const InsightsPage = () => {
                 </div>
                 <div class="lbi_details">
                   <h2>
-                    <a
-                      href="benefits-of-using-stock-footage-in-videos"
-                      target="_blank"
+                    <Link
+                      to="/benefits-of-using-stock-footage-in-videos"
                     >
                       Benefits of using stock footage in videos
-                    </a>
+                    </Link>
                   </h2>
                   {/* <!--<a class="learnM" href="insights.php">Learn More</a>--> */}
                 </div>

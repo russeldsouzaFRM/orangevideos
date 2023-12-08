@@ -225,7 +225,7 @@ a.video_popup_custom{
     }
 }
 
-.insights-banner-blog {
+.insights-banner-blog.ImportanceOfRacce {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url('../../../assets-new/images/blog/recce-banner.jpg') no-repeat center / cover;
 }
 strong{font-weight:500;}

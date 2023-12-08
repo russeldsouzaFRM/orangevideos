@@ -4,7 +4,7 @@ const TypesOfShotsInLiveShootVideos = () => {
   return (
     <>
       {/* section 1 */}
-      <section className="pageBanner insights-banner-blog">
+      <section className="pageBanner insights-banner-blog TypesOfShotsInLiveShootVideos">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">

@@ -10,7 +10,7 @@ const ImportanceOfRacce = () => {
   return (
     <>
       {/* section 1 */}
-      <section className="pageBanner insights-banner-blog">
+      <section className="pageBanner insights-banner-blog ImportanceOfRacce">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
