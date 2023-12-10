@@ -119,10 +119,7 @@ const Home = () => {
           </div>
           <div className="row mb-3 d-flex justify-content-center">
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/video-strategy"
-                className="icon_box_1 text-center"
-              >
+              <Link to="/video-strategy" className="icon_box_1 text-center">
                 <div className="flipper">
                   <div className="front">
                     <img
@@ -139,11 +136,11 @@ const Home = () => {
                     <h3>video strategy</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/professional-corporate-film-video-production-agency-mumbai.php"
+              <Link
+                to="/professional-corporate-film-video-production-agency-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -162,11 +159,11 @@ const Home = () => {
                     <h3>corporate videos</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/product-video-makers-mumbai.php"
+              <Link
+                to="/product-video-makers-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -185,11 +182,11 @@ const Home = () => {
                     <h3>product videos</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/aerial-videography-photography.php"
+              <Link
+                to="/aerial-videography-photography"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -208,13 +205,13 @@ const Home = () => {
                     <h3>aerial videography &amp; photography</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="row d-flex">
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/2d-3d-animation-video-production-agency-mumbai.php"
+              <Link
+                to="/2d-3d-animation-video-production-agency-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -233,11 +230,11 @@ const Home = () => {
                     <h3>2d &amp; 3d animation</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="explainer-video-production-company-mumbai.php"
+              <Link
+                to="/explainer-video-production-company-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -256,11 +253,11 @@ const Home = () => {
                     <h3>explainer videos</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/digital-ad-film-making-agency-mumbai.php"
+              <Link
+                to="/digital-ad-film-making-agency-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -279,11 +276,11 @@ const Home = () => {
                     <h3>digital ad films</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/corporate-photoshoots-agency-mumbai.php"
+              <Link
+                to="/corporate-photoshoots-agency-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -302,7 +299,7 @@ const Home = () => {
                     <h3>photoshoots</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -422,7 +419,7 @@ const Home = () => {
                     corporate videos
                   </a>
                   <h4>
-                    <a href="portfolio.php">BARING PRIVATE EQUITY</a>
+                    <Link to="/portfolio">BARING PRIVATE EQUITY</Link>
                   </h4>
                 </div>
               </div>
@@ -445,7 +442,7 @@ const Home = () => {
                     corporate videos
                   </a>
                   <h4>
-                    <a href="portfolio.php">fsc</a>
+                    <Link to="/portfolio">fsc</Link>
                   </h4>
                 </div>
               </div>
@@ -468,7 +465,7 @@ const Home = () => {
                     corporate videos
                   </a>
                   <h4>
-                    <a href="portfolio.php">TOTAL (TCAP)</a>
+                    <Link to="/portfolio">TOTAL (TCAP)</Link>
                   </h4>
                 </div>
               </div>
@@ -490,7 +487,7 @@ const Home = () => {
                     Graphic Animation
                   </a>
                   <h4>
-                    <a href="portfolio.php">Little Guru</a>
+                    <Link to="/portfolio">Little Guru</Link>
                   </h4>
                 </div>
               </div>
@@ -509,7 +506,7 @@ const Home = () => {
                     2d animation
                   </a>
                   <h4>
-                    <a href="portfolio.php">Anunta</a>
+                    <Link to="/portfolio">Anunta</Link>
                   </h4>
                 </div>
               </div>
@@ -528,7 +525,7 @@ const Home = () => {
                     whiteboard
                   </a>
                   <h4>
-                    <a href="portfolio.php">medtronic</a>
+                    <Link to="/portfolio">medtronic</Link>
                   </h4>
                 </div>
               </div>
@@ -537,9 +534,9 @@ const Home = () => {
           <div className="row">
             <div className="container">
               <div className="col-md-12 text-center">
-                <a className="common_btn" href="portfolio.php">
+                <Link className="common_btn" to="/portfolio">
                   <span>view more</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -605,12 +602,9 @@ const Home = () => {
                 </div>
                 <div className="lbi_details">
                   <h2>
-                    <a
-                      href="voice-over-and-its-role-in-videos.php"
-                      target="_blank"
-                    >
+                    <Link to="/voice-over-and-its-role-in-videos">
                       Voice over and its role in videos
-                    </a>
+                    </Link>
                   </h2>
                 </div>
               </div>
@@ -629,12 +623,9 @@ const Home = () => {
                 </div>
                 <div className="lbi_details">
                   <h2>
-                    <a
-                      href="importance-of-production-design.php"
-                      target="_blank"
-                    >
+                    <Link to="/importance-of-production-design">
                       Importance of Production Design
-                    </a>
+                    </Link>
                   </h2>
                 </div>
               </div>
@@ -653,12 +644,9 @@ const Home = () => {
                 </div>
                 <div className="lbi_details">
                   <h2>
-                    <a
-                      href="types-of-shots-in-live-shoot-videos.php"
-                      target="_blank"
-                    >
+                    <Link to="/types-of-shots-in-live-shoot-videos">
                       Types of Shots in Live Shoot Videos
-                    </a>
+                    </Link>
                   </h2>
                 </div>
               </div>
@@ -667,9 +655,9 @@ const Home = () => {
           <div className="row">
             <div className="container">
               <div className="col-md-12 text-center">
-                <a className="common_btn" href="insights.php">
+                <Link className="common_btn" to="/insights">
                   <span>explore more</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -716,7 +704,7 @@ const Home = () => {
                       style={{ width: "2.5px", marginRight: "30px" }}
                     >
                       <div className="singleClient">
-                        <a href="javascript:void(0);">
+                        <a href="/" onClick={(e) => e.preventDefault()}>
                           <img
                             src="/assets-new/images/client/coloured/1.jpg"
                             alt=""
@@ -729,7 +717,7 @@ const Home = () => {
                       sstyle={{ width: "2.5px", marginRight: "30px" }}
                     >
                       <div className="singleClient">
-                        <a href="javascript:void(0);">
+                        <a href="/" onClick={(e) => e.preventDefault()}>
                           <img
                             src="/assets-new/images/client/coloured/2.jpg"
                             alt=""
@@ -742,7 +730,7 @@ const Home = () => {
                       sstyle={{ width: "2.5px", marginRight: "30px" }}
                     >
                       <div className="singleClient">
-                        <a href="javascript:void(0);">
+                        <a href="/" onClick={(e) => e.preventDefault()}>
                           <img
                             src="/assets-new/images/client/coloured/3.jpg"
                             alt=""
@@ -755,7 +743,7 @@ const Home = () => {
                       sstyle={{ width: "2.5px", marginRight: "30px" }}
                     >
                       <div className="singleClient">
-                        <a href="javascript:void(0);">
+                        <a href="/" onClick={(e) => e.preventDefault()}>
                           <img
                             src="/assets-new/images/client/coloured/4.jpg"
                             alt=""
@@ -768,7 +756,7 @@ const Home = () => {
                       sstyle={{ width: "2.5px", marginRight: "30px" }}
                     >
                       <div className="singleClient">
-                        <a href="javascript:void(0);">
+                        <a href="/" onClick={(e) => e.preventDefault()}>
                           <img
                             src="/assets-new/images/client/coloured/5.jpg"
                             alt=""
@@ -781,7 +769,7 @@ const Home = () => {
                       sstyle={{ width: "2.5px", marginRight: "30px" }}
                     >
                       <div className="singleClient">
-                        <a href="javascript:void(0);">
+                        <a href="/" onClick={(e) => e.preventDefault()}>
                           <img
                             src="/assets-new/images/client/coloured/6.jpg"
                             alt=""
@@ -794,7 +782,7 @@ const Home = () => {
                       sstyle={{ width: "2.5px", marginRight: "30px" }}
                     >
                       <div className="singleClient">
-                        <a href="javascript:void(0);">
+                        <a href="/" onClick={(e) => e.preventDefault()}>
                           <img
                             src="/assets-new/images/client/coloured/7.jpg"
                             alt=""
@@ -807,7 +795,7 @@ const Home = () => {
                       sstyle={{ width: "2.5px", marginRight: "30px" }}
                     >
                       <div className="singleClient">
-                        <a href="javascript:void(0);">
+                        <a href="/" onClick={(e) => e.preventDefault()}>
                           <img
                             src="/assets-new/images/client/coloured/8.jpg"
                             alt=""
@@ -886,7 +874,7 @@ const Home = () => {
               <a
                 className="common_btn bg-white-button"
                 href="https://www.orangevideos.in/credentials-deck.pdf"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <span>DOWNLOAD CREDENTIALS DECK</span>
               </a>

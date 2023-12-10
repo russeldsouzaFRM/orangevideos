@@ -29,10 +29,7 @@ const NavBar = () => {
             <div className="col-lg-2 col-sm-3 col-md-3">
               <div className="logo">
                 <Link to="/">
-                  <img
-                    src="../assets-new/images/logo (1).svg"
-                    alt=""
-                  />
+                  <img src="../assets-new/images/logo (1).svg" alt="" />
                 </Link>
               </div>
             </div>
@@ -83,17 +80,20 @@ const NavBar = () => {
             </div>
             <div className="col-lg-2 col-sm-2 col-md-2">
               <div className="navigator text-right" onClick={handlePopup}>
-                {/* <!--<a className="search searchToggler" href="javascript:void(0);"><i className="mei-magnifying-glass"></i></a>--> */}
+                {/* <!--<a className="search searchToggler" href="/"
+                      onClick={(e) => e.preventDefault()}><i className="mei-magnifying-glass"></i></a>--> */}
                 <a
-                  href="javascript:void(0);"
+                  href="/"
                   className="menu mobilemenu hidden-sm hidden-md hidden-lg hidden-xs"
+                  onClick={(e) => e.preventDefault()}
                 >
                   <i className="fa-solid fa-bars mei-menu"></i>
                 </a>
                 <a
                   id="open-overlay-nav"
                   className="menu hamburger"
-                  href="javascript:void(0);"
+                  href="/"
+                  onClick={(e) => e.preventDefault()}
                 >
                   <i className="fa-solid fa-bars mei-menu"></i>
                 </a>

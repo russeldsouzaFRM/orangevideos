@@ -21,7 +21,7 @@
 .bd-job-banner{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../../assets-new/images/banner/bd-job-banner.jpeg) no-repeat center center / cover;
 }
-.insights-banner{
+.insights-banner.InsightsPage{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../../assets-new/images/banner/insights-banner.jpeg) no-repeat center center / cover;
 }
 .bg-white-button{

@@ -108,8 +108,11 @@ const HomeSection6 = () => {
                       <li className="control_item" key={ind}>
                         <a
                           role="button"
-                          href="javascript:void(0);"
-                          onClick={() => getCaroData({ items, ind })}
+                          href="/"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            getCaroData({ items, ind });
+                          }}
                         >
                           <span>
                             <img src={items.img} alt={items.name} />

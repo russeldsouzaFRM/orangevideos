@@ -1,3 +1,4 @@
+
 /*banner*/
 
 .about-us-banner {
@@ -251,7 +252,7 @@ a.video_popup_custom {
 }
 
 /*.studio-banner{*/
-/*    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(assets-new/images/banner/studio-banner.jpg) no-repeat center center / cover;*/
+/*    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(../images/banner/studio-banner.jpg) no-repeat center center / cover;*/
 /*}*/
 
 .layput-section {

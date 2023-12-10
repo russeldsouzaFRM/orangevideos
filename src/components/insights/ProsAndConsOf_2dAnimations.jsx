@@ -1,7 +1,12 @@
 import "./styles/ProsAndConsOf_2dAnimations.css";
-import React from "react";
+import { useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
 
 const ProsAndConsOf2dAnimations = () => {
+  const pathname = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
       {/* section 1 */}

@@ -10,12 +10,11 @@ const ServicePage = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  
   return (
     <>
       {/* section 1 */}
       <motion.section
-        className="pageBanner services-banner"
+        className="pageBanner services-banner ServicePage"
         initial="hide"
         whileInView="view"
         viewport={{ once: true }}
@@ -67,10 +66,7 @@ const ServicePage = () => {
           </div>
           <div className="row mb-3 d-flex justify-content-center">
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/video-strategy"
-                className="icon_box_1 text-center"
-              >
+              <Link to="/video-strategy" className="icon_box_1 text-center">
                 <div className="flipper">
                   <div className="front">
                     <img
@@ -87,11 +83,11 @@ const ServicePage = () => {
                     <h3>video strategy</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/professional-corporate-film-video-production-agency-mumbai.php"
+              <Link
+                to="/professional-corporate-film-video-production-agency-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -110,11 +106,11 @@ const ServicePage = () => {
                     <h3>corporate videos</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/product-video-makers-mumbai.php"
+              <Link
+                to="/product-video-makers-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -133,11 +129,11 @@ const ServicePage = () => {
                     <h3>product videos</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/aerial-videography-photography.php"
+              <Link
+                to="/aerial-videography-photography"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -156,13 +152,13 @@ const ServicePage = () => {
                     <h3>aerial videography &amp; photography</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="row d-flex">
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/2d-3d-animation-video-production-agency-mumbai.php"
+              <Link
+                to="/2d-3d-animation-video-production-agency-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -181,11 +177,11 @@ const ServicePage = () => {
                     <h3>2d &amp; 3d animation</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="explainer-video-production-company-mumbai.php"
+              <Link
+                to="/explainer-video-production-company-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -204,11 +200,11 @@ const ServicePage = () => {
                     <h3>explainer videos</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/digital-ad-film-making-agency-mumbai.php"
+              <Link
+                to="/digital-ad-film-making-agency-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -227,11 +223,11 @@ const ServicePage = () => {
                     <h3>digital ad films</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="col-lg-3 col-sm-4 col-md-3">
-              <a
-                href="https://www.orangevideos.in/corporate-photoshoots-agency-mumbai.php"
+              <Link
+                to="/corporate-photoshoots-agency-mumbai"
                 className="icon_box_1 text-center"
               >
                 <div className="flipper">
@@ -250,7 +246,7 @@ const ServicePage = () => {
                     <h3>photoshoots</h3>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

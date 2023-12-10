@@ -5,7 +5,7 @@
   height: 100%;
   width: 100%;
   background-color: #00000085;
-  z-index: 50;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@
 
 .dv-close {
   position: absolute;
-  top: -20px;
+  top: -30px;
   right: -20px;
 }
 
@@ -33,45 +33,45 @@
 
 /*banner*/
 
-.about-us-banner {
+.about-us-banner.AboutPage {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/about-us.jpg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/about-us.jpg) no-repeat center center /
+      cover;
 }
 .contact-us-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/contact-us.jpg)
-      no-repeat center right / cover;
+    url(../../assets-new/images/banner/contact-us.jpg) no-repeat center right /
+      cover;
 }
 .client-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/clients.jpg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/clients.jpg) no-repeat center center /
+      cover;
 }
 .services-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/services.jpeg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/services.jpeg) no-repeat center center /
+      cover;
 }
 .portfolio-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/portfolio.jpg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/portfolio.jpg) no-repeat center center /
+      cover;
 }
 .careers-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/careers.jpg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/careers.jpg) no-repeat center center /
+      cover;
 }
 .bd-job-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/bd-job-banner.jpeg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/bd-job-banner.jpeg) no-repeat center
+      center / cover;
 }
 .insights-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/insights-banner.jpeg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/insights-banner.jpeg) no-repeat center
+      center / cover;
 }
 .bg-white-button {
   background-color: #fff;
@@ -86,8 +86,8 @@
   color: #ff950d;
 }
 .ready-top {
-  background: url(../../assets-new/images/bg/1.jpg)
-    no-repeat center center / cover;
+  background: url(../../assets-new/images/bg/1.jpg) no-repeat center center /
+    cover;
 }
 .mb-3 {
   margin-bottom: 3rem;
@@ -280,9 +280,17 @@ a.video_popup_custom {
   }
 }
 
+@media (max-width: 800px) {
+  .dv-popup-vid iframe {
+    width: 550px;
+    height: 350px;
+  }
+}
+
 @media (max-width: 426px) {
   .dv-popup-vid iframe {
-    width: 100%;
+    width: 320px;
+    height: 230px;
   }
 
   .videoWrap_2 {
@@ -301,5 +309,12 @@ a.video_popup_custom {
 
   .compay_date {
     position: unset;
+  }
+}
+
+@media (max-width: 320px) {
+  .dv-popup-vid iframe {
+    width: 260px;
+    height: 205px;
   }
 }

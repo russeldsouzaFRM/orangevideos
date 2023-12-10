@@ -1,4 +1,4 @@
-.popup-container {
+/* .popup-container {
   position: fixed;
   top: 0;
   height: 100%;
@@ -20,7 +20,37 @@
 
 .popup-container .pop-content {
   position: relative;
+} */
+
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Use rgba for transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Make sure it's on top of other elements */
 }
+
+.pop-content {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 800px; /* Set a max-width to ensure readability */
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: -25px;
+  right: 10px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
 
 .footer_1 .contact_widgets p:first-of-type {
   margin-bottom: unset;

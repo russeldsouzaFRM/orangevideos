@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./styles/VoiceOverAndItsRoleInVideos.css";
 import { useEffect } from "react";
 
@@ -153,9 +153,9 @@ const VoiceOverAndItsRoleInVideos = () => {
                     to complement your video. Looking for a video with a
                     charming voice-over? Head to Orange Videos today, contact us
                     at{" "}
-                    <a href="https://www.orangevideos.in/contact-us">
-                      https://www.orangevideos.in/contact-us
-                    </a>
+                    <Link to="/contact">
+                      Contact us
+                    </Link>
                   </p>
                 </div>
 

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import TabComponent from "./TestComponent";
 import "../styles/Portfolio.css";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const PortfolioPage = () => {
   const pathname = useLocation();
@@ -21,14 +21,14 @@ const PortfolioPage = () => {
           hide: { opacity: 0, y: 100 },
         }}
         transition={{ duration: 1 }}
-        className="pageBanner portfolio-banner"
+        className="pageBanner portfolio-banner PortfolioPage"
       >
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="banner_content text-center">
                 <h4>
-                  <a href="#">home</a> - portfolio
+                  <Link to="/">home</Link> - portfolio
                 </h4>
                 <h1>portfolio</h1>
               </div>

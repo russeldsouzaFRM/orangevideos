@@ -60,7 +60,7 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                                             <li><a href="index3.html">Home 03</a></li>
                                         </ul>--> */}
                     </li>
-                    {/* <!--<li><a href="./about-us.php">About</a></li>--> */}
+                    {/* <!--<li><a href="/about-us">About</a></li>--> */}
                     <li className="">
                       <Link to="/video-services" onClick={clickFunc}>
                         services
@@ -118,7 +118,9 @@ const NavPopup = ({ clickFunc, showPopup }) => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/contact">contact</Link>
+                      <Link to="/contact" onClick={clickFunc}>
+                        contact
+                      </Link>
                     </li>
                   </ul>
                 </div>

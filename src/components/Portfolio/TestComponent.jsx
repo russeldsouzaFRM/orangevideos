@@ -384,6 +384,27 @@ const TabComponent = () => {
 
   return (
     <>
+      {/* popup container */}
+      {showPopup ? (
+        <div className="popup-container">
+          <div className="pop-content">
+            <i
+              className="fa-solid fa-xmark close-btn"
+              onClick={() => setShowPopup(false)}
+            ></i>
+            <iframe
+              width="700"
+              height="400"
+              src={showPopupVid}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      ) : null}
+
       <div>
         <div className="container">
           <div className="col-lg-12">
@@ -432,7 +453,7 @@ const TabComponent = () => {
             </div>
           </div>
           <div className="row">
-            <AnimatePresence className="custom" mode="wait">
+            <AnimatePresence className="custom">
               {filteredData.map((item, ind) => (
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
@@ -447,8 +468,9 @@ const TabComponent = () => {
                     <img src={item.imgSrc} alt="" />
                     <a
                       className="video_popup video_popup_custom"
-                      href="javascript:void(0);"
-                      onClick={() => {
+                      href="/"
+                      onClick={(e) => {
+                        e.preventDefault();
                         handlePopup();
                         setShowPopupVid(item.yt);
                       }}
@@ -457,11 +479,17 @@ const TabComponent = () => {
                     </a>
                     <div className="folioHover">
                       {/* <!--<a className="video_popup" href="https://www.youtube.com/watch?v=A7ZkZazfvao"><i className="fa fa-play"></i></a>--> */}
-                      <a className="cate" href="javascript:void(0);">
+                      <a
+                        className="cate"
+                        href="/"
+                        onClick={(e) => e.preventDefault()}
+                      >
                         {item.category}
                       </a>
                       <h4>
-                        <a href="javascript:void(0);">{item.name}</a>
+                        <a href="/" onClick={(e) => e.preventDefault()}>
+                          {item.name}
+                        </a>
                       </h4>
                     </div>
                   </div>
@@ -471,27 +499,6 @@ const TabComponent = () => {
           </div>
         </div>
       </div>
-
-      {/* popup container */}
-      {showPopup ? (
-        <div className="popup-container">
-          <div className="pop-content">
-            <i
-              class="fa-solid fa-xmark close-btn"
-              onClick={() => setShowPopup(false)}
-            ></i>
-            <iframe
-              width="700"
-              height="400"
-              src={showPopupVid}
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      ) : null}
     </>
   );
 };

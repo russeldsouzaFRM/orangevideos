@@ -31,7 +31,7 @@ const AboutPage = () => {
           hide: { opacity: 0, y: 100 },
         }}
         transition={{ duration: 1 }}
-        className="pageBanner about-us-banner"
+        className="pageBanner about-us-banner AboutPage"
       >
         <div className="container">
           <div className="row">
@@ -141,8 +141,11 @@ const AboutPage = () => {
             {/* <!--<h4 className="sub_title mb-3" >Over showreel</h4>--> */}
             <a
               className="video_popup"
-              href="javascript:void(0);"
-              onClick={handleVideoPopup}
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                handleVideoPopup();
+              }}
             >
               <i className="fa fa-play"></i>
             </a>
@@ -191,8 +194,8 @@ const AboutPage = () => {
           {/* <a href="https://www.youtube.com/watch?v=JGV05ck7U0g"></a> */}
           <div className="dv-popup-vid">
             <iframe
-              width="560"
-              height="315"
+              width="800"
+              height="500"
               src="https://www.youtube.com/embed/JGV05ck7U0g?si=km9l5m9js8Bafxkg"
               title="YouTube video player"
               frameborder="0"

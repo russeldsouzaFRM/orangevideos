@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
+import "../../assets-new/css/grid.css"
 import "../styles/studio.css";
 import { Link, useLocation } from "react-router-dom";
 import Fancybox from "./Fancybox";
 import { motion } from "framer-motion";
 import Playvideo from "./corporate-video-production/video/web-banner-v1.mp4";
-
 // const Fancybox = lazy(() => import("./Fancybox"));
 
 const galleryItems = [

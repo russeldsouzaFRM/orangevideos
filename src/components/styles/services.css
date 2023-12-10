@@ -2,43 +2,43 @@
 
 .about-us-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/about-us.jpg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/about-us.jpg) no-repeat center center /
+      cover;
 }
 .contact-us-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/contact-us.jpg)
-      no-repeat center right / cover;
+    url(../../assets-new/images/banner/contact-us.jpg) no-repeat center right /
+      cover;
 }
 .client-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/clients.jpg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/clients.jpg) no-repeat center center /
+      cover;
 }
-.services-banner {
+.services-banner.ServicePage {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/services.jpeg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/services.jpeg) no-repeat center center /
+      cover;
 }
-.portfolio-banner {
+.portfolio-banner.PortfolioPage {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/portfolio.jpg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/portfolio.jpg) no-repeat center center /
+      cover;
 }
 .careers-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/careers.jpg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/careers.jpg) no-repeat center center /
+      cover;
 }
 .bd-job-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/bd-job-banner.jpeg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/bd-job-banner.jpeg) no-repeat center
+      center / cover;
 }
 .insights-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../../assets-new/images/banner/insights-banner.jpeg)
-      no-repeat center center / cover;
+    url(../../assets-new/images/banner/insights-banner.jpeg) no-repeat center
+      center / cover;
 }
 .bg-white-button {
   background-color: #fff;
@@ -53,8 +53,8 @@
   color: #ff950d;
 }
 .ready-top {
-  background: url(../../assets-new/images/bg/1.jpg)
-    no-repeat center center / cover;
+  background: url(../../assets-new/images/bg/1.jpg) no-repeat center center /
+    cover;
 }
 .mb-3 {
   margin-bottom: 3rem;
@@ -245,13 +245,61 @@ a.video_popup_custom {
     width: 110px !important;
   }
 }
+.commonSection {
+  padding: 120px 0 !important;
+}
 
 @media (max-width: 426px) {
   .CL_content .abc_inner {
     margin-top: unset;
   }
+}
 
-  .commonSection {
-    padding: 120px 0;
-  }
+.insights-banner-blog.VideoStrategy {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../assets-new/images/blog/video-strategy.jpg) no-repeat right / cover;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.insights-banner-blog.ProfessionalCorporateFilmVideoProductionAgencyMumbai {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../assets-new/images/blog/Corporate-Videos.png) no-repeat right /
+      cover;
+}
+
+.insights-banner-blog.ProductVideoMakersMumbai {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../assets-new/images/blog/Product-Videos.png) no-repeat right / cover;
+}
+
+.insights-banner-blog.AerialVideographyPhotography {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../assets-new/images/blog/Aerial-Videography.jpg) no-repeat right /
+      cover;
+}
+
+.insights-banner-blog.TwoThreeAnimationVideoProductionAgencyMumbai {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../assets-new/images/blog/3D-Animation.png) no-repeat right / cover;
+}
+
+.insights-banner-blog.ExplainerVideoProductionCompanyMumbai {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../assets-new/images/blog/Explainer-Video.jpg) no-repeat right /
+      cover;
+}
+
+.insights-banner-blog.DigitalAdFilmMakingAgencyMumbai {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../assets-new/images/blog/Digital-Ad-Films.jpg) no-repeat right /
+      cover;
+}
+
+.insights-banner-blog.CorporatePhotoshootsAgencyMumbai {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../assets-new/images/blog/Photoshoots-blog.jpg) no-repeat right /
+      cover;
 }

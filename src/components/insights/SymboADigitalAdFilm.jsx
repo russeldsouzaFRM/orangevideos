@@ -1,7 +1,13 @@
-import React from "react";
 import "./styles/SymboADigitalAdFilm.css";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import React, { useEffect } from "react";
 
 const SymboADigitalAdFilm = () => {
+  const pathname = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
       {/* section 1 */}
@@ -66,6 +72,7 @@ const SymboADigitalAdFilm = () => {
                     <img
                       src="../../assets-new/images/blog/blog collage.jpg"
                       style={{ marginBottom: "20px" }}
+                      alt=""
                     />
                   </div>
 
@@ -174,9 +181,7 @@ const SymboADigitalAdFilm = () => {
 
                   <p>
                     Want to create an Ad Film?{" "}
-                    <a href="https://www.orangevideos.in/contact-us">
-                      Get in touch with us today!
-                    </a>
+                    <Link to="/contact">Get in touch with us today!</Link>
                   </p>
                 </div>
 

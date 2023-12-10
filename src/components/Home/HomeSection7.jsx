@@ -192,7 +192,11 @@ const HomeSection7 = () => {
                     }`}
                     onClick={() => handleTabClick(index)}
                   >
-                    <a role="button" href="javascript:void(0);">
+                    <a
+                      role="button"
+                      href="/"
+                      onClick={(e) => e.preventDefault()}
+                    >
                       {tab.title}
                     </a>
                   </li>

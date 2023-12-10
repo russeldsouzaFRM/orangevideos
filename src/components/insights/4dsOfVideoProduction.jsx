@@ -1,7 +1,13 @@
+import { useLocation } from "react-router-dom";
 import "./styles/4dsOfVideoProduction.css";
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const FourDsOfVideoProduction = () => {
+
+    const pathname = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <>
     {/* section 1 */}
