@@ -1,7 +1,5 @@
 # Roshan check below firebase URL
-https://orangevideos.web.app/
-
-## All pages are done
+All pages are done - https://orangevideos.web.app/
 
 ## Getting Started with Create React App
 
