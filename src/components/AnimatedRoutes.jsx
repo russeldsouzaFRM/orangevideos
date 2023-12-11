@@ -226,15 +226,17 @@ const routes = [
 
 const AnimatedRoutes = () => {
   return (
-    <Routes>
-      {routes.map(({ path, element }) => (
-        <Route
-          key={path}
-          path={path}
-          element={<PageTransition>{element}</PageTransition>}
-        />
-      ))}
-    </Routes>
+    <>
+      <Routes>
+        {routes.map(({ path, element }) => (
+          <Route
+            key={path}
+            path={path}
+            element={<PageTransition>{element}</PageTransition>}
+          />
+        ))}
+      </Routes>
+    </>
   );
 };
 

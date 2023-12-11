@@ -1,3 +1,7 @@
+input.validate-input, textarea.validate-input, select.validate-input{
+    border: 1px solid #ff950d;
+}
+
 /*banner*/
     
 .about-us-banner{

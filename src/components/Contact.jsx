@@ -17,21 +17,40 @@ const Contact = () => {
     contact_message: "",
   });
 
+  const [errors, setErrors] = useState({});
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
+    setFormData((prevData) => ({
+      ...prevData,
       [name]: value,
-    });
+    }));
+    // Clear the red border when the user starts typing
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: "",
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e);
 
-    const templateParams = {
-      ...formData,
-    };
+    // Validate the form
+    const validationErrors = {};
+    Object.keys(formData).forEach((key) => {
+      if (key !== "contact_phone" && !formData[key]) {
+        validationErrors[key] = "This field is required";
+      }
+    });
+    setErrors(validationErrors);
+
+    // If there are validation errors, don't submit the form
+    if (Object.keys(validationErrors).length > 0) {
+      return;
+    }
+
+    // Proceed with sending the email
+    const templateParams = { ...formData };
 
     // Add your emailjs service ID and template ID
     const serviceId = "service_icqahja";
@@ -79,7 +98,7 @@ const Contact = () => {
             <div className="col-lg-12">
               <div className="banner_content text-center">
                 <h4>
-                  <Link href="/">home</Link> - contact
+                  <Link to="/">home</Link> - contact
                 </h4>
                 <h1>Contact us</h1>
               </div>
@@ -129,7 +148,9 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form ${
+                        errors.contact_name && "validate-input"
+                      }`}
                       type="text"
                       name="contact_name"
                       id="contact_name"
@@ -137,6 +158,9 @@ const Contact = () => {
                       value={formData.contact_name}
                       onChange={handleChange}
                     />
+                    {/* {errors.contact_name && (
+                      <p className="error-message">{errors.contact_name}</p>
+                    )} */}
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
@@ -148,7 +172,9 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form ${
+                        errors.contact_email && "validate-input"
+                      }`}
                       type="email"
                       name="contact_email"
                       id="contact_email"
@@ -156,6 +182,9 @@ const Contact = () => {
                       value={formData.contact_email}
                       onChange={handleChange}
                     />
+                    {/* {errors.contact_email && (
+                      <p className="error-message">{errors.contact_email}</p>
+                    )} */}
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
@@ -167,7 +196,9 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form"
+                      className={`input-form ${
+                        errors.contact_phone && "validate-input"
+                      }`}
                       type="text"
                       name="contact_phone"
                       id="contact_phone"
@@ -175,6 +206,9 @@ const Contact = () => {
                       value={formData.contact_phone}
                       onChange={handleChange}
                     />
+                    {/* {errors.contact_phone && (
+                      <p className="error-message">{errors.contact_phone}</p>
+                    )} */}
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
@@ -186,7 +220,9 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form ${
+                        errors.contact_org_name && "validate-input"
+                      }`}
                       type="text"
                       name="contact_org_name"
                       id="contact_org_name"
@@ -194,6 +230,9 @@ const Contact = () => {
                       value={formData.contact_org_name}
                       onChange={handleChange}
                     />
+                    {/* {errors.contact_org_name && (
+                      <p className="error-message">{errors.contact_org_name}</p>
+                    )} */}
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.select
@@ -205,7 +244,9 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form"
+                      className={`input-form ${
+                        errors.contact_designation && "validate-input"
+                      }`}
                       name="contact_designation"
                       id="contact_designation"
                       value={formData.contact_designation}
@@ -233,6 +274,9 @@ const Contact = () => {
                       <option value="Student">Student</option>
                       <option value="Other">Other</option>
                     </motion.select>
+                    {/* {errors.contact_designation && (
+                      <p className="error-message">{errors.contact_designation}</p>
+                    )} */}
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.select
@@ -244,7 +288,9 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form"
+                      className={`input-form ${
+                        errors.contact_service && "validate-input"
+                      }`}
                       name="contact_service"
                       id="contact_service"
                       value={formData.contact_service}
@@ -262,6 +308,9 @@ const Contact = () => {
                       <option value="Photoshoots">Photoshoots</option>
                       <option value="Other">Other</option>
                     </motion.select>
+                    {/* {errors.contact_service && (
+                      <p className="error-message">{errors.contact_service}</p>
+                    )} */}
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
@@ -273,7 +322,9 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form ${
+                        errors.contact_budget && "validate-input"
+                      }`}
                       type="number"
                       name="contact_budget"
                       id="contact_budget"
@@ -281,6 +332,9 @@ const Contact = () => {
                       value={formData.contact_budget}
                       onChange={handleChange}
                     />
+                    {/* {errors.contact_budget && (
+                      <p className="error-message">{errors.contact_budget}</p>
+                    )} */}
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
@@ -292,7 +346,9 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form ${
+                        errors.contact_deadline && "validate-input"
+                      }`}
                       type="text"
                       name="contact_deadline"
                       id="contact_deadline"
@@ -300,6 +356,9 @@ const Contact = () => {
                       value={formData.contact_deadline}
                       onChange={handleChange}
                     />
+                    {/* {errors.contact_deadline && (
+                      <p className="error-message">{errors.contact_deadline}</p>
+                    )} */}
                   </div>
                   <div className="col-lg-6 col-sm-6"></div>
                   <div className="col-lg-12 col-sm-12">
@@ -312,7 +371,9 @@ const Contact = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form ${
+                        errors.contact_message && "validate-input"
+                      }`}
                       type="text"
                       name="contact_message"
                       id="contact_message"
@@ -320,6 +381,9 @@ const Contact = () => {
                       onChange={handleChange}
                       placeholder="Tell us a bit about you, what style of video you are looking for, length and turnaround time you need so we can reach out with more info."
                     ></motion.textarea>
+                    {/* {errors.contact_message && (
+                      <p className="error-message">{errors.contact_message}</p>
+                    )} */}
                   </div>
                 </div>
                 <motion.button
@@ -333,6 +397,7 @@ const Contact = () => {
                   transition={{ duration: 1 }}
                   className="common_btn red_bg"
                   id="career_form_button"
+                  type="submit"
                 >
                   <span>Send Message</span>
                 </motion.button>
@@ -341,6 +406,50 @@ const Contact = () => {
           </div>
         </div>
       </motion.section>
+
+      <section className="commonSection client_2 featured">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 text-center">
+              <h2 className="sec_title">our offices</h2>
+              <p className="sec_desc">
+                Orange Videos is based in Mumbai, India. Our in-house team is
+                made up of creative professionals that work closely with more
+                than 100 creatives all around the globe to create out-of-the-box
+                video content, customized for your needs.
+              </p>
+            </div>
+          </div>
+          <div className="row d-flex">
+            <div className="col-lg-6 col-sm-6 col-md-3">
+              <div className="singleClient_2">
+                <h3>Mumbai</h3>
+                {/* <!--<p>C-208, 2nd Floor, Building 5,</p>-->
+                            <!--<p>Mittal Estate, Andheri-Kurla Road,</p>-->
+                            <!--<p>Andheri East, Mumbai 400059</p>--> */}
+
+                <p>102, Town Center 2,</p>
+                <p>Andheri Kurla Road, Marol,</p>
+                <p>Andheri East, Mumbai - 400059</p>
+              </div>
+            </div>
+            <div className="col-lg-6 col-sm-6 col-md-3">
+              <div className="singleClient_2 h-100">
+                {/* <!--<h3>Delhi</h3>-->
+                            <!--<p>91 Springboard, Plot No. 23, HSIDC </p>-->
+                            <!--<p>Maruti Industrial Area, Sector 18,  </p>-->
+                            <!--<p>Gurgaon, Haryana 122015. </p>--> */}
+                <h3>Bangalore</h3>
+                {/* <!-- <p>Church Street,<br> Bangalore 560001</p> --> */}
+
+                <p>Akshay Tech Park</p>
+                <p>Plot No. 72 &amp; 73, Vijayanagar</p>
+                <p>EPIP Zone, Whitefield, Bengaluru 560066</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
