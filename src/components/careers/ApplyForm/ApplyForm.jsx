@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
+import EmailForm from "./EmailForm";
+import axios from "axios";
 
 const ApplyForm = () => {
   const currentURL = window.location.href;
@@ -15,12 +17,92 @@ const ApplyForm = () => {
 
   useEffect(() => {
     console.log(url.replace("-", " "));
+    console.log(typeof url);
   }, []);
 
   const pathname = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  const [formData, setFormData] = useState({
+    career_f_name: "",
+    career_l_name: "",
+    career_email: "",
+    career_phone: "",
+    career_experience: "",
+    career_current_ctc: "",
+    career_expected_ctc: "",
+    career_notice_period: "",
+    career_earliest_date: "",
+    career_resume: null,
+    career_apply_for: url.replace("-", " "),
+  });
+
+  const [formErrors, setFormErrors] = useState({});
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleFileChange = (e) => {
+    setFormData({
+      ...formData,
+      career_resume: e.target.files[0],
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Simple form validation
+    const errors = {};
+    if (!formData.career_f_name.trim()) {
+      errors.career_f_name = "First Name is required";
+    }
+
+    if (!formData.career_l_name.trim()) {
+      errors.career_l_name = "Last Name is required";
+    }
+
+    if (!formData.career_email.trim()) {
+      errors.career_email = "Email is required";
+    } else if (!/^\S+@\S+\.\S+$/.test(formData.career_email)) {
+      errors.career_email = "Invalid email format";
+    }
+
+    // ... (Validation logic for other fields)
+
+    if (Object.keys(errors).length > 0) {
+      setFormErrors(errors);
+      return;
+    }
+
+    // Clear previous errors if any
+    setFormErrors({});
+
+    const form = new FormData();
+    Object.keys(formData).forEach((key) => {
+      form.append(key, formData[key]);
+    });
+
+    try {
+      const response = await axios.post(
+        "http://localhost:3001/send-email",
+        form
+      );
+      console.log(response.data);
+    } catch (error) {
+      console.error(
+        "Error sending email:",
+        error.response ? error.response.data : error.message
+      );
+    }
+  };
+
   return (
     <>
       <motion.section
@@ -68,7 +150,11 @@ const ApplyForm = () => {
           </div>
           <div className="row">
             <div className="col-lg-8 col-lg-offset-2 col-sm-12 col-md-10 col-md-offset-1">
-              <div className="contactFrom" id="careerForm">
+              <form
+                className="contactFrom"
+                id="careerForm"
+                onSubmit={handleSubmit}
+              >
                 <div className="row">
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
@@ -80,11 +166,14 @@ const ApplyForm = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form required ${
+                        formErrors.career_f_name ? "error-border" : ""
+                      }`}
                       type="text"
                       name="career_f_name"
                       id="career_f_name"
                       placeholder="First Name"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-lg-6 col-sm-6">
@@ -97,11 +186,14 @@ const ApplyForm = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form required ${
+                        formErrors.career_f_name ? "error-border" : ""
+                      }`}
                       type="text"
                       name="career_l_name"
                       id="career_l_name"
                       placeholder="Last Name"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-lg-6 col-sm-6">
@@ -114,11 +206,14 @@ const ApplyForm = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form required ${
+                        formErrors.career_f_name ? "error-border" : ""
+                      }`}
                       type="email"
                       name="career_email"
                       id="career_email"
                       placeholder="Email Address"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-lg-6 col-sm-6">
@@ -131,11 +226,14 @@ const ApplyForm = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form"
+                      className={`input-form required ${
+                        formErrors.career_f_name ? "error-border" : ""
+                      }`}
                       type="text"
                       name="career_phone"
                       id="career_phone"
                       placeholder="Phone Number"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-lg-6 col-sm-6">
@@ -148,11 +246,14 @@ const ApplyForm = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form required ${
+                        formErrors.career_f_name ? "error-border" : ""
+                      }`}
                       type="text"
                       name="career_experience"
                       id="career_experience"
                       placeholder="Experience (ex: X years X months)"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-lg-6 col-sm-6">
@@ -165,11 +266,14 @@ const ApplyForm = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form required ${
+                        formErrors.career_f_name ? "error-border" : ""
+                      }`}
                       type="text"
                       name="career_current_ctc"
                       id="career_current_ctc"
                       placeholder="Current CTC (per annum)"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-lg-6 col-sm-6">
@@ -182,11 +286,14 @@ const ApplyForm = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form required ${
+                        formErrors.career_f_name ? "error-border" : ""
+                      }`}
                       type="text"
                       name="career_expected_ctc"
                       id="career_expected_ctc"
                       placeholder="Expected CTC (per annum)"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-lg-6 col-sm-6">
@@ -199,11 +306,14 @@ const ApplyForm = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form required ${
+                        formErrors.career_f_name ? "error-border" : ""
+                      }`}
                       type="text"
                       name="career_notice_period"
                       id="career_notice_period"
                       placeholder="Notice Period (in Days)"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-lg-6 col-sm-6">
@@ -216,11 +326,14 @@ const ApplyForm = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form required"
+                      className={`input-form required ${
+                        formErrors.career_f_name ? "error-border" : ""
+                      }`}
                       type="text"
                       name="career_earliest_date"
                       id="career_earliest_date"
                       placeholder="Earliest Date of Joining (in Days)"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="col-lg-6 col-sm-6">
@@ -233,10 +346,13 @@ const ApplyForm = () => {
                         hide: { opacity: 0, y: 100 },
                       }}
                       transition={{ duration: 1 }}
-                      className="input-form"
+                      className={`input-form required ${
+                        formErrors.career_f_name ? "error-border" : ""
+                      }`}
                       type="file"
                       name="career_resume"
                       id="career_resume"
+                      onChange={handleFileChange}
                     />
                     <span id="document_upload_error"></span>
                   </div>
@@ -249,11 +365,13 @@ const ApplyForm = () => {
                       hide: { opacity: 0, y: 100 },
                     }}
                     transition={{ duration: 1 }}
-                    className="input-form"
+                    className={`input-form required ${
+                      formErrors.career_f_name ? "error-border" : ""
+                    }`}
                     type="hidden"
                     name="career_apply_for"
                     id="career_apply_for"
-                    value="Account Manager"
+                    value={url}
                   />
                 </div>
                 <motion.button
@@ -271,7 +389,7 @@ const ApplyForm = () => {
                 >
                   <span>Send Message</span>
                 </motion.button>
-              </div>
+              </form>
             </div>
           </div>
         </div>
