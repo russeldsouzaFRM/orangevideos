@@ -14,11 +14,6 @@ const ApplyForm = () => {
 
   const url = lastSegment.replace("-apply", "");
 
-  // useEffect(() => {
-  //   console.log(url.replace("-", " "));
-  //   console.log(typeof url);
-  // }, []);
-
   const pathname = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -125,10 +120,6 @@ const ApplyForm = () => {
       );
     }
   };
-
-  useEffect(() => {
-    console.log(formData);
-  }, [formData]);
 
   return (
     <>
@@ -349,7 +340,7 @@ const ApplyForm = () => {
                       id="career_notice_period"
                       placeholder="Notice Period (in Days)"
                       onChange={handleChange}
-                      />
+                    />
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
@@ -429,20 +420,20 @@ const ApplyForm = () => {
             </div>
           </div>
         </div>
-        <AnimatePresence>
-          {showDialog && (
-            <motion.div
-              className="dialog-box"
-              initial={{ x: "-100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "-100%" }}
-              transition={{ duration: 0.5 }}
-            >
-              <p>Form submitted successfully!</p>
-            </motion.div>
-          )}
-        </AnimatePresence>
       </motion.section>
+      <AnimatePresence>
+        {showDialog && (
+          <motion.div
+            className="dialog-box"
+            initial={{ x: "-100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "-100%" }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
+          >
+            <p>Form submitted successfully!</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };
