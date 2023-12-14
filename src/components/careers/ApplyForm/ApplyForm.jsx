@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
-import EmailForm from "./EmailForm";
 import axios from "axios";
 
 const ApplyForm = () => {
