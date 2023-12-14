@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import EmailForm from "./EmailForm";
 import axios from "axios";
 
@@ -15,10 +15,10 @@ const ApplyForm = () => {
 
   const url = lastSegment.replace("-apply", "");
 
-  useEffect(() => {
-    console.log(url.replace("-", " "));
-    console.log(typeof url);
-  }, []);
+  // useEffect(() => {
+  //   console.log(url.replace("-", " "));
+  //   console.log(typeof url);
+  // }, []);
 
   const pathname = useLocation();
   useEffect(() => {
@@ -40,6 +40,8 @@ const ApplyForm = () => {
   });
 
   const [formErrors, setFormErrors] = useState({});
+
+  const [showDialog, setShowDialog] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -91,10 +93,32 @@ const ApplyForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3001/send-email",
+        "https://ov-email-server.glitch.me/send-email",
         form
       );
       console.log(response.data);
+
+      // Show the dialog
+      setShowDialog(true);
+
+      // Reset form data after successful submission
+      setFormData({
+        career_f_name: "",
+        career_l_name: "",
+        career_email: "",
+        career_phone: "",
+        career_experience: "",
+        career_current_ctc: "",
+        career_expected_ctc: "",
+        career_notice_period: "",
+        career_earliest_date: "",
+        career_resume: null,
+      });
+
+      // Hide the dialog after 5 seconds
+      setTimeout(() => {
+        setShowDialog(false);
+      }, 5000);
     } catch (error) {
       console.error(
         "Error sending email:",
@@ -102,6 +126,10 @@ const ApplyForm = () => {
       );
     }
   };
+
+  useEffect(() => {
+    console.log(formData);
+  }, [formData]);
 
   return (
     <>
@@ -174,6 +202,7 @@ const ApplyForm = () => {
                       id="career_f_name"
                       placeholder="First Name"
                       onChange={handleChange}
+                      value={formData.career_f_name}
                     />
                   </div>
                   <div className="col-lg-6 col-sm-6">
@@ -194,6 +223,7 @@ const ApplyForm = () => {
                       id="career_l_name"
                       placeholder="Last Name"
                       onChange={handleChange}
+                      value={formData.career_l_name}
                     />
                   </div>
                   <div className="col-lg-6 col-sm-6">
@@ -209,6 +239,7 @@ const ApplyForm = () => {
                       className={`input-form required ${
                         formErrors.career_f_name ? "error-border" : ""
                       }`}
+                      value={formData.career_email}
                       type="email"
                       name="career_email"
                       id="career_email"
@@ -220,6 +251,7 @@ const ApplyForm = () => {
                     <motion.input
                       initial="hide"
                       whileInView="view"
+                      value={formData.career_phone}
                       viewport={{ once: true }}
                       variants={{
                         view: { opacity: 1, y: 0 },
@@ -238,6 +270,7 @@ const ApplyForm = () => {
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
+                      value={formData.career_experience}
                       initial="hide"
                       whileInView="view"
                       viewport={{ once: true }}
@@ -258,6 +291,7 @@ const ApplyForm = () => {
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
+                      value={formData.career_current_ctc}
                       initial="hide"
                       whileInView="view"
                       viewport={{ once: true }}
@@ -279,6 +313,7 @@ const ApplyForm = () => {
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
                       initial="hide"
+                      value={formData.career_expected_ctc}
                       whileInView="view"
                       viewport={{ once: true }}
                       variants={{
@@ -298,6 +333,7 @@ const ApplyForm = () => {
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
+                      value={formData.career_notice_period}
                       initial="hide"
                       whileInView="view"
                       viewport={{ once: true }}
@@ -318,6 +354,7 @@ const ApplyForm = () => {
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
+                      value={formData.career_earliest_date}
                       initial="hide"
                       whileInView="view"
                       viewport={{ once: true }}
@@ -393,6 +430,19 @@ const ApplyForm = () => {
             </div>
           </div>
         </div>
+        <AnimatePresence>
+          {showDialog && (
+            <motion.div
+              className="dialog-box"
+              initial={{ x: "-100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "-100%" }}
+              transition={{ duration: 0.5 }}
+            >
+              <p>Form submitted successfully!</p>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </motion.section>
     </>
   );
