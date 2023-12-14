@@ -350,7 +350,7 @@ const ApplyForm = () => {
                       id="career_notice_period"
                       placeholder="Notice Period (in Days)"
                       onChange={handleChange}
-                    />
+                      />
                   </div>
                   <div className="col-lg-6 col-sm-6">
                     <motion.input
